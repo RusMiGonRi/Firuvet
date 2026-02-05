@@ -76,4 +76,6 @@ class BeneficiosActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    // Comentario de Prueba
 }
