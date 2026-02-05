@@ -118,4 +118,6 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    //Comentario2
 }
