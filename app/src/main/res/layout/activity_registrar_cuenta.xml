@@ -68,6 +68,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegistroNombre"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -89,6 +90,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegistroFecha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -119,6 +121,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegistroNick"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -140,6 +143,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegistroClave"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPassword"
@@ -162,6 +166,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegistroConfirmarClave"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPassword"

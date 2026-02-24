@@ -173,6 +173,7 @@
                         android:layout_marginBottom="12dp">
 
                         <AutoCompleteTextView
+                            android:id="@+id/actvMascota"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="none"
@@ -196,6 +197,7 @@
                         android:layout_marginBottom="12dp">
 
                         <AutoCompleteTextView
+                            android:id="@+id/actvLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="none"
@@ -226,6 +228,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etMotivoCita"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -247,6 +250,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etFechaCita"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="date"
@@ -269,6 +273,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etHoraCita"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="datetime"
@@ -291,7 +296,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Comentarios Extras"/>
+                        android:text="Comentarios Extras (Opcional)"/>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -299,11 +304,13 @@
                         android:layout_marginBottom="20dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etComentarioExtra"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
                             android:lines="3"
                             android:padding="5dp"/>
+
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>

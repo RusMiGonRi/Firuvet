@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.cibertec.demo"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.cibertec.demo"

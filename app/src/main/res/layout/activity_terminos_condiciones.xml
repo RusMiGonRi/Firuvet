@@ -108,4 +108,187 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:background="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingHorizontal="5dp"
+                android:background="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Terminos de Condiciones"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:padding="10dp"
+            android:background="@drawable/background_firuvet_huellas">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_gray_frame">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Cuentas de Empresa Verificadas"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Las empresas deben pasar un proceso de validación de identidad y permisos legales para operar. Al registrarse, aceptan la auditoría de sus servicios por parte de Firuvet."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#FFFFFF"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Transparencia y Monitoreo"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="El usuario tendrá acceso a actualizaciones en tiempo real sobre los procedimientos realizados. La empresa se compromete a mantener la información actualizada y veraz."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#FFFFFF"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Protección de Datos de la Mascota"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="El historial clínico es compartido exclusivamente entre la empresa prestadora y el dueño. Firuvet garantiza el cifrado de esta información sensible."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="15dp"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#FFFFFF"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Responsabilidad Médica y Técnica"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Firuvet es una plataforma de enlace. La calidad del servicio veterinario o estético es responsabilidad directa de la empresa verificada."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="15dp"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#FFFFFF"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Uso de Fotos y Videos en Tiempo Real"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Las empresas podrán subir evidencia visual del estado de la mascota. Estas imágenes son propiedad del usuario y no podrán ser usadas para publicidad sin permiso."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="15dp"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#FFFFFF"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Revocación de Verificación"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Firuvet se reserva el derecho de eliminar cuentas de empresas que reciban reportes de mala praxis o que incumplan con la veracidad del monitoreo en vivo."
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="15dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

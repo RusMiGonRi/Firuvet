@@ -13,68 +13,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // VOLVER
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAInicioSesion() }
+        findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
+        findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
+        findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
 
-        val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-
-        ivVolver.setOnClickListener {
-            irAInicioSesion()
-        }
-
-        // OPCION CONFIGURACION
-
-        val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
-
-        ivConfiguracion.setOnClickListener {
-            irAConfiguracion()
-        }
-
-        // OPCION PERFIL MASCOTA
-
-        val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
-
-        ivPerfilMascota.setOnClickListener {
-            irAPerfilMascota()
-        }
-
-        // OPCION PERFIL PERSONAL
-
-        val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
-
-        ivPerfilPersonal.setOnClickListener {
-            irAPerfilPersonal()
-        }
-
-        // SELECCION CREAR CITA
-
-        val ivCrearCita = findViewById<ImageView>(R.id.ivCrearCita)
-
-        ivCrearCita.setOnClickListener {
-            irACrearCita()
-        }
-
-        // SELECCION LISTA DE LUGARES
-
-        val ivListaLugares = findViewById<ImageView>(R.id.ivListaLugares)
-
-        ivListaLugares.setOnClickListener {
-            irAListaLugares()
-        }
-
-        // SELECCION BENEFICIOS
-
-        val ivBeneficios = findViewById<ImageView>(R.id.ivBeneficios)
-
-        ivBeneficios.setOnClickListener {
-            irABeneficios()
-        }
-
+        findViewById<ImageView>(R.id.ivCrearCita).setOnClickListener { irACrearCita() }
+        findViewById<ImageView>(R.id.ivListaLugares).setOnClickListener { irAListaLugares() }
+        findViewById<ImageView>(R.id.ivBeneficios).setOnClickListener { irABeneficios() }
+        findViewById<ImageView>(R.id.ivCitasPendiente).setOnClickListener { irACitasPendiente() }
     }
 
     private fun irAInicioSesion() {
@@ -84,38 +38,30 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun irAConfiguracion() {
-        val intent = Intent(this, ConfiguracionActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, ConfiguracionActivity::class.java))
     }
 
     private fun irAPerfilMascota() {
-        val intent = Intent(this, PerfilMascotaActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, PerfilMascotaActivity::class.java))
     }
 
     private fun irAPerfilPersonal() {
-        val intent = Intent(this, PerfilPersonalActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, PerfilPersonalActivity::class.java))
     }
 
     private fun irACrearCita() {
-        val intent = Intent(this, CrearCitaActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, CrearCitaActivity::class.java))
     }
 
     private fun irAListaLugares() {
-        val intent = Intent(this, ListaLugaresActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, ListaLugaresActivity::class.java))
     }
 
     private fun irABeneficios() {
-        val intent = Intent(this, BeneficiosActivity::class.java)
-        startActivity(intent)
-        finish()
+        startActivity(Intent(this, BeneficiosActivity::class.java))
+    }
+
+    private fun irACitasPendiente() {
+        startActivity(Intent(this, CitasPendienteActivity::class.java))
     }
 }
