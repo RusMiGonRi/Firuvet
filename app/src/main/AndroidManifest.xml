@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Firuvet">
         <activity
+            android:name=".IngresarMascotaActivity"
+            android:exported="false" />
+        <activity
             android:name=".CitasPendienteActivity"
             android:exported="false" />
         <activity
