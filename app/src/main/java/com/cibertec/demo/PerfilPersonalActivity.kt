@@ -28,7 +28,7 @@ class PerfilPersonalActivity : AppCompatActivity() {
         val etTelefono = findViewById<android.widget.EditText>(R.id.etTelefono)
         val etDireccion = findViewById<android.widget.EditText>(R.id.etDireccion)
         val mrbIndefinido = findViewById<com.google.android.material.radiobutton.MaterialRadioButton>(R.id.mrbGeneroIndefinido)
-        val btnGuardar = findViewById<android.widget.Button>(R.id.btnCrearCita)
+        val btnGuardarUsuario = findViewById<android.widget.Button>(R.id.btnGuardarUsuario)
         val rgGenero = findViewById<android.widget.RadioGroup>(R.id.rgGenero)
         val user = com.cibertec.demo.data.UsuarioRepository.usuarioSesion
 
@@ -50,7 +50,7 @@ class PerfilPersonalActivity : AppCompatActivity() {
             }
         }
 
-        btnGuardar.setOnClickListener {
+        btnGuardarUsuario.setOnClickListener {
             if (user != null) {
                 user.apellidos = etApellidos.text.toString()
                 user.fechaNacimiento = etFecha.text.toString()
