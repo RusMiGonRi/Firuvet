@@ -172,6 +172,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNombre"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -193,6 +194,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etApellidos"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -217,12 +219,14 @@
                         android:text="Genero"/>
 
                     <RadioGroup
+                        android:id="@+id/rgGenero"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbGeneroFemenino"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -233,6 +237,7 @@
                             android:text="Femenino"/>
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbGeneroMasculino"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -243,6 +248,7 @@
                             android:text="Masculino"/>
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbGeneroIndefinido"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -268,6 +274,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etFechaNacimiento"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="date"
@@ -290,6 +297,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCorreo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textWebEmailAddress"
@@ -312,6 +320,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDni"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="numberPassword"
@@ -342,6 +351,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTelefono"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
@@ -364,6 +374,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDireccion"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textEmailAddress"
@@ -394,6 +405,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCantidadMascotas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
@@ -416,6 +428,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCantidadCitas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"

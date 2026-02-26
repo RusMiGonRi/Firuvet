@@ -43,6 +43,7 @@ class RegistrarCuentaActivity : AppCompatActivity() {
         val chbTerminos = findViewById<CheckBox>(R.id.chbTerminos)
         val btnCrearCuenta = findViewById<Button>(R.id.btnCrearCuenta)
         val tvTengoCuenta = findViewById<TextView>(R.id.tvTengoCuenta)
+
         etRegistroFecha.isFocusable = false
         etRegistroFecha.isClickable = true
 

@@ -46,6 +46,7 @@ class InicioSesionActivity : AppCompatActivity() {
                 }
 
                 if (encontrado != null) {
+                    com.cibertec.demo.data.UsuarioRepository.usuarioSesion = encontrado
                     Toast.makeText(this, "Bienvenido " + encontrado.nombreCompleto, Toast.LENGTH_SHORT).show()
                     irAMenuPrincipal()
                 } else {

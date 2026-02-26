@@ -81,10 +81,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 5.7.0.5&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio de funciones en RegistrarCuentaActivity">
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 6.0.0.0&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio del codigo en InicioSesion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/InicioSesionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/InicioSesionActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_inicio_sesion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_inicio_sesion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/data/UsuarioRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/data/UsuarioRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Usuario.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772126933009</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="VERSION | 5.7.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio del codigo en InicioSesion">
+      <option name="closed" value="true" />
+      <created>1772127798222</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772127798222</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -313,7 +325,8 @@
     <MESSAGE value="VERSION | 4.0.1.8&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
     <MESSAGE value="VERSION | 5.7.0.2&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
     <MESSAGE value="VERSION | 5.7.0.5&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio de funciones en RegistrarCuentaActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 5.7.0.5&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio de funciones en RegistrarCuentaActivity" />
+    <MESSAGE value="VERSION | 5.7.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio del codigo en InicioSesion" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 5.7.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio del codigo en InicioSesion" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
