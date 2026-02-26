@@ -86,8 +86,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 7.0.2.4&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" afterDir="false" />
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 7.0.2.5&#10;- Cambio de funciones en PerfilPersonalActivity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/IngresarMascotaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/IngresarMascotaActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772146770214</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="VERSION | 7.0.2.5&#10;- Cambio de funciones en PerfilPersonalActivity">
+      <option name="closed" value="true" />
+      <created>1772146858229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772146858229</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -364,7 +373,8 @@
     <MESSAGE value="VERSION | 6.0.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Usuario&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio del codigo en PerfilPersonal" />
     <MESSAGE value="VERSION | 7.0.2.0&#10;- Agregado el layout IngresarMascota&#10;- Agregado la actividad IngresarMascotaActivity" />
     <MESSAGE value="VERSION | 7.0.2.4&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 7.0.2.4&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal" />
+    <MESSAGE value="VERSION | 7.0.2.5&#10;- Cambio de funciones en PerfilPersonalActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 7.0.2.5&#10;- Cambio de funciones en PerfilPersonalActivity" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
