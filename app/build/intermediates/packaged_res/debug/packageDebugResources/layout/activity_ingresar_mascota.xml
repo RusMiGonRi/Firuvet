@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerfilMascotaActivity"
+    tools:context=".IngresarMascotaActivity"
     android:background="#FFFFFF"
     android:orientation="vertical">
 
@@ -40,7 +40,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_orangegray_frame"
+            android:background="@drawable/border_greengray_frame"
             android:padding="10dp">
 
             <LinearLayout
@@ -120,7 +120,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
-                android:src="@drawable/banner_firuvet_perfilmascota"/>
+                android:src="@drawable/banner_firuvet_crearcita"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                     android:background="#FFFFFF"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    android:text="Perfil Mascota"/>
+                    android:text="Ingresar Datos Mascota"/>
 
             </FrameLayout>
 
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:padding="15dp"
                     android:orientation="vertical"
-                    android:background="@drawable/border_orangegray_frame">
+                    android:background="@drawable/border_greengray_frame">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -250,7 +250,7 @@
                         android:id="@+id/btnAgregarApodo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#A46441"
+                        android:backgroundTint="#568571"
                         android:text="Agregar Nuevo"
                         android:textColor="#FFFFFF"/>
 
@@ -259,7 +259,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:layout_marginBottom="12dp"
-                        app:dividerColor="#905538"
+                        app:dividerColor="#446255"
                         app:dividerThickness="2dp"/>
 
                     <TextView
@@ -304,7 +304,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:layout_marginBottom="12dp"
-                        app:dividerColor="#905538"
+                        app:dividerColor="#446255"
                         app:dividerThickness="2dp"/>
 
                     <TextView
@@ -375,7 +375,7 @@
                         android:id="@+id/btnAgregarAlergia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#A46441"
+                        android:backgroundTint="#568571"
                         android:text="Agregar Nuevo"
                         android:textColor="#FFFFFF"/>
 
@@ -384,7 +384,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:layout_marginBottom="12dp"
-                        app:dividerColor="#905538"
+                        app:dividerColor="#446255"
                         app:dividerThickness="2dp"/>
 
                     <TextView
@@ -429,13 +429,13 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnGuardarMascota"
+                android:id="@+id/btnIngresar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:backgroundTint="#CA774F"
-                android:text="Guardar"/>
+                android:backgroundTint="#6C9D88"
+                android:text="Ingresar"/>
 
         </LinearLayout>
 

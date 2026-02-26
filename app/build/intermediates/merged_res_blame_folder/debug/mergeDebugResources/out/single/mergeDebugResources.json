@@ -8,8 +8,16 @@
         "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\layout\\activity_citas_pendiente.xml"
     },
     {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_perfil_mascota.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_perfil_mascota.xml"
+    },
+    {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\layout_activity_terminos_condiciones.xml.flat",
         "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\layout\\activity_terminos_condiciones.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_ingresar_mascota.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_ingresar_mascota.xml"
     },
     {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\drawable_banner_firuvet_perfilpersonal.jpg.flat",
@@ -28,16 +36,12 @@
         "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_inicio_sesion.xml.flat",
-        "source": "com.cibertec.demo.app-main-37:/layout/activity_inicio_sesion.xml"
+        "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\drawable_button_button_beneficios.png.flat",
+        "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\drawable\\button_button_beneficios.png"
     },
     {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\mipmap-hdpi_ic_launcher_background.webp.flat",
         "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\mipmap-hdpi\\ic_launcher_background.webp"
-    },
-    {
-        "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\drawable_button_button_beneficios.png.flat",
-        "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\drawable\\button_button_beneficios.png"
     },
     {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\layout_activity_perfil_mascota.xml.flat",
@@ -174,6 +178,10 @@
     {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\drawable_background_firuvet_background.png.flat",
         "source": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-main-37:\\drawable\\background_firuvet_background.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_crear_cita.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_crear_cita.xml"
     },
     {
         "merged": "C:\\Users\\rusbe\\.gradle\\daemon\\9.1.0\\com.cibertec.demo.app-debug-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",

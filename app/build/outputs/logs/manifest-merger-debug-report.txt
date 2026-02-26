@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\0c6754e3b9760ced0f15935935608769\workspace\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\62e01f2cb3a9ad932c75eb50ff0875cc\workspace\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\5f08497dbede81acfea2e37d8c92d994\workspace\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -56,8 +56,8 @@ MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users
 	xmlns:android
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-53:19
-INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-53:19
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-56:19
+INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-56:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\0c6754e3b9760ced0f15935935608769\workspace\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\0c6754e3b9760ced0f15935935608769\workspace\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\62e01f2cb3a9ad932c75eb50ff0875cc\workspace\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -94,82 +94,88 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rusbe\.gradle\cach
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:13:9-45
 	android:dataExtractionRules
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.cibertec.demo.CitasPendienteActivity
+activity#com.cibertec.demo.IngresarMascotaActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:15:13-51
-activity#com.cibertec.demo.TerminosCondicionesActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:15:13-52
+activity#com.cibertec.demo.CitasPendienteActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:18:13-56
-activity#com.cibertec.demo.RegistrarCuentaActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:18:13-51
+activity#com.cibertec.demo.TerminosCondicionesActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:21:13-52
-activity#com.cibertec.demo.PerfilPersonalActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:21:13-56
+activity#com.cibertec.demo.RegistrarCuentaActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:24:13-51
-activity#com.cibertec.demo.PerfilMascotaActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:24:13-52
+activity#com.cibertec.demo.PerfilPersonalActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:27:13-50
-activity#com.cibertec.demo.ListaLugaresActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:27:13-51
+activity#com.cibertec.demo.PerfilMascotaActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:30:13-49
-activity#com.cibertec.demo.MainActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:30:13-50
+activity#com.cibertec.demo.ListaLugaresActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:33:13-41
-activity#com.cibertec.demo.CrearCitaActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:33:13-49
+activity#com.cibertec.demo.MainActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:36:13-46
-activity#com.cibertec.demo.ConfiguracionActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:36:13-41
+activity#com.cibertec.demo.CrearCitaActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:39:13-50
-activity#com.cibertec.demo.BeneficiosActivity
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:39:13-46
+activity#com.cibertec.demo.ConfiguracionActivity
 ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:42:13-47
-activity#com.cibertec.demo.InicioSesionActivity
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:44:9-52:20
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:42:13-50
+activity#com.cibertec.demo.BeneficiosActivity
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:45:13-47
+activity#com.cibertec.demo.InicioSesionActivity
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:47:9-55:20
+	android:exported
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:49:13-36
+	android:name
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:48:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:53:27-74
 uses-sdk
 INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml

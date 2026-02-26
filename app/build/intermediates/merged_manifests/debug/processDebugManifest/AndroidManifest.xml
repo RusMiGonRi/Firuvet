@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Firuvet" >
         <activity
+            android:name="com.cibertec.demo.IngresarMascotaActivity"
+            android:exported="false" />
+        <activity
             android:name="com.cibertec.demo.CitasPendienteActivity"
             android:exported="false" />
         <activity
