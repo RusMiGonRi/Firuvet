@@ -87,24 +87,25 @@ class RegistrarCuentaActivity : AppCompatActivity() {
             val nombre = etRegistroNombre.text.toString().trim()
             val fecha = etRegistroFecha.text.toString().trim()
             val nick = etRegistroNick.text.toString().trim()
-            val pass = etRegistroClave.text.toString().trim()
-            val confirmPass = etRegistroConfirmarClave.text.toString().trim()
-            val acepto = chbTerminos.isChecked
+            val clave = etRegistroClave.text.toString().trim()
+            val confirmarClave = etRegistroConfirmarClave.text.toString().trim()
+            val terminos = chbTerminos.isChecked
 
-            if (nombre.isEmpty() || fecha.isEmpty() || nick.isEmpty() || pass.isEmpty()) {
+            if (nombre.isEmpty() || fecha.isEmpty() || nick.isEmpty() || clave.isEmpty()) {
                 Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            if (pass != confirmPass) {
+            if (clave != confirmarClave) {
                 Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            if (!acepto) {
+            if (!terminos) {
                 Toast.makeText(this, "Debes aceptar los términos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            val nuevoUsuario = Usuario(nombre, fecha, nick, pass, acepto)
+            val nuevoUsuario = Usuario(nombre, fecha, nick, clave, terminos)
+            com.cibertec.demo.data.UsuarioRepository.listaUsuarios.add(nuevoUsuario)
 
             Toast.makeText(this, "Usuario ${nuevoUsuario.nickUsuario} registrado", Toast.LENGTH_LONG).show()
             irAIniciarSesion()

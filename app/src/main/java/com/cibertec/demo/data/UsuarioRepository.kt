@@ -1,4 +1,7 @@
 package com.cibertec.demo.data
 
-class UsuarioRepository {
+import com.cibertec.demo.entity.Usuario
+
+object UsuarioRepository {
+    val listaUsuarios = mutableListOf<Usuario>()
 }

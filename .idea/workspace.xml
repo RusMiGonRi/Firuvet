@@ -81,11 +81,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 4.0.1.8&#10;- Cambio de funciones en Terminos Condiciones Activity&#10;- Cambio en el codigo de Terminos Condiciones">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" afterDir="false" />
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 5.7.0.2&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/data/UsuarioRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/data/UsuarioRepository.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771991494586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="VERSION | 5.7.0.2&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main">
+      <option name="closed" value="true" />
+      <created>1772126400587</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772126400587</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -295,7 +302,9 @@
     <MESSAGE value="VERSION | 2.0.0.1&#10;- Eliminado comentario de prueba en la activity Beneficios" />
     <MESSAGE value="VERSION | 4.0.1.7&#10;- Agregado la vista Citas Pendiente&#10;- Agregado la vista Configuracion&#10;- Agregado la vista Terminos Condiciones&#10;- Agregado ID's en Inicio Sesion&#10;- Agregado ID's en Crear Cita&#10;- Agregado los Drawer Layout&#10;- Cambio en la vista Main&#10;- Cambio de funciones en Crear Cita Activity&#10;- Cambio de funciones en Inicio Sesion Activity&#10;- Cambio de funciones en Main Activity&#10;- Cambio de funciones en Registrar Cuenta Activity" />
     <MESSAGE value="VERSION | 4.0.1.8&#10;- Cambio de funciones en Terminos Condiciones Activity&#10;- Cambio en el codigo de Terminos Condiciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 4.0.1.8&#10;- Cambio de funciones en Terminos Condiciones Activity&#10;- Cambio en el codigo de Terminos Condiciones" />
+    <MESSAGE value="VERSION | 4.0.1.8&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
+    <MESSAGE value="VERSION | 5.7.0.2&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 5.7.0.2&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
