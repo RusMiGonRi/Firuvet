@@ -19,8 +19,8 @@ class InicioSesionActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_inicio_sesion)
 
-        val etUsuario = findViewById<EditText>(R.id.etUsuario)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
+        val etNick = findViewById<EditText>(R.id.etNick)
+        val etClave = findViewById<EditText>(R.id.etClave)
         val btnIniciarSesion = findViewById<Button>(R.id.btnIniciarSesion)
         val tvSinCuenta = findViewById<TextView>(R.id.tvSinCuenta)
 
@@ -33,16 +33,24 @@ class InicioSesionActivity : AppCompatActivity() {
         tvSinCuenta.paintFlags = tvSinCuenta.paintFlags or Paint.UNDERLINE_TEXT_FLAG
 
         btnIniciarSesion.setOnClickListener {
-            val usuario = etUsuario.text.toString().trim()
-            val password = etPassword.text.toString().trim()
+            val usuario = etNick.text.toString().trim()
+            val clave = etClave.text.toString().trim()
 
-            if (usuario.isEmpty() || password.isEmpty()) {
+            if (usuario.isEmpty() || clave.isEmpty()) {
                 Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-            } else if (password.length < 6) {
+            } else if (clave.length < 6) {
                 Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Bienvenido a Firuvet", Toast.LENGTH_SHORT).show()
-                irAMenuPrincipal()
+                val encontrado = com.cibertec.demo.data.UsuarioRepository.listaUsuarios.find {
+                    it.nickUsuario == usuario && it.claveUsuario == clave
+                }
+
+                if (encontrado != null) {
+                    Toast.makeText(this, "Bienvenido " + encontrado.nombreCompleto, Toast.LENGTH_SHORT).show()
+                    irAMenuPrincipal()
+                } else {
+                    Toast.makeText(this, "Usuario o clave incorrectos", Toast.LENGTH_SHORT).show()
+                }
             }
         }
 
