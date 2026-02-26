@@ -59,7 +59,6 @@ class PerfilPersonalActivity : AppCompatActivity() {
                 user.telefono = etTelefono.text.toString()
                 user.direccion = etDireccion.text.toString()
 
-                val rgGenero = findViewById<android.widget.RadioGroup>(R.id.rgGenero)
                 var generoSeleccionado = "No Especifico"
                 val idSeleccionado = rgGenero.checkedRadioButtonId
 
