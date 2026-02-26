@@ -147,14 +147,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="435dp"
+                android:layout_height="680dp"
                 android:padding="10dp"
                 android:background="@drawable/background_firuvet_huellas">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:orientation="vertical"
                     android:background="@drawable/border_orangegray_frame">
 
@@ -164,7 +164,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Nombre"/>
+                        android:text="Nombre de Mascota"/>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -172,6 +172,7 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNombreMascota"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border_border_white_frame"
@@ -185,20 +186,73 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Apodo"/>
+                        android:text="Especie"/>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="12dp">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <AutoCompleteTextView
+                            android:id="@+id/actvEspecie"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:inputType="none"
                             android:background="@drawable/border_border_white_frame"
                             android:padding="5dp"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:text="Apodos"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="5dp">
+
+                            <EditText
+                                android:id="@+id/etApodos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_border_white_frame"
+                                android:padding="5dp"/>
+
+                            <ImageView
+                                android:id="@+id/ivEliminarApodo"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@android:drawable/ic_delete"
+                                app:tint="#FFFFFF"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAgregarApodo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A46441"
+                        android:text="Agregar Nuevo"
+                        android:textColor="#FFFFFF"/>
 
                     <com.google.android.material.divider.MaterialDivider
                         android:layout_width="match_parent"
@@ -214,32 +268,33 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Genero"/>
+                        android:text="Género"/>
 
                     <RadioGroup
+                        android:id="@+id/rgGeneroMascota"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbGeneroHembra"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:buttonTint="@android:color/white"
                             android:textStyle="bold"
                             android:textColor="#FFFFFF"
-                            android:textSize="15sp"
                             android:text="Hembra"/>
 
                         <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbGeneroMacho"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:buttonTint="@android:color/white"
                             android:textStyle="bold"
                             android:textColor="#FFFFFF"
-                            android:textSize="15sp"
                             android:text="Macho"/>
 
                     </RadioGroup>
@@ -266,9 +321,10 @@
                         android:layout_marginBottom="12dp">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNacimientoMascota"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="date"
+                            android:focusable="false"
                             android:background="@drawable/border_border_white_frame"
                             android:padding="5dp"/>
 
@@ -282,25 +338,98 @@
                         android:textColor="#FFFFFF"
                         android:text="Alergias"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp">
+                        android:orientation="vertical"
+                        android:paddingTop="5dp">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/border_border_white_frame"
-                            android:padding="5dp"/>
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="5dp">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <EditText
+                                android:id="@+id/etAlergias"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_border_white_frame"
+                                android:padding="5dp"/>
+
+                            <ImageView
+                                android:id="@+id/ivEliminarAlergia"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@android:drawable/ic_delete"
+                                app:tint="#FFFFFF"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAgregarAlergia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#A46441"
+                        android:text="Agregar Nuevo"
+                        android:textColor="#FFFFFF"/>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        app:dividerColor="#905538"
+                        app:dividerThickness="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:text="¿Está Esterilizado?"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgEsterilizado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbSiEsterilizado"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:buttonTint="@android:color/white"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:text="Si"/>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/mrbNoEsterilizado"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:buttonTint="@android:color/white"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:text="No"/>
+
+                    </RadioGroup>
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnCrearCita"
+                android:id="@+id/btnGuardarMascota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

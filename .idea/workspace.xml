@@ -86,10 +86,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 6.0.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Usuario&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio del codigo en PerfilPersonal">
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 7.0.2.0&#10;- Agregado el layout IngresarMascota&#10;- Agregado la actividad IngresarMascotaActivity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_cita.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_cita.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresar_mascota.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresar_mascota.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_mascota.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_mascota.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +166,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
@@ -334,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772141744411</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="VERSION | 7.0.2.0&#10;- Agregado el layout IngresarMascota&#10;- Agregado la actividad IngresarMascotaActivity">
+      <option name="closed" value="true" />
+      <created>1772142224275</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772142224275</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -347,7 +358,8 @@
     <MESSAGE value="VERSION | 5.7.0.5&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio de funciones en RegistrarCuentaActivity" />
     <MESSAGE value="VERSION | 5.7.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio del codigo en InicioSesion" />
     <MESSAGE value="VERSION | 6.0.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Usuario&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio del codigo en PerfilPersonal" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 6.0.0.6&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Usuario&#10;- Cambio de funciones en UsuarioRepository&#10;- Cambio del codigo en PerfilPersonal" />
+    <MESSAGE value="VERSION | 7.0.2.0&#10;- Agregado el layout IngresarMascota&#10;- Agregado la actividad IngresarMascotaActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 7.0.2.0&#10;- Agregado el layout IngresarMascota&#10;- Agregado la actividad IngresarMascotaActivity" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
