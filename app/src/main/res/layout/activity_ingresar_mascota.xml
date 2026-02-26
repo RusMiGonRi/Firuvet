@@ -211,9 +211,10 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Apodos"/>
+                        android:text="Apodos (Opcional)"/>
 
                     <LinearLayout
+                        android:id="@+id/llContenedorApodos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -227,20 +228,11 @@
                             android:layout_marginBottom="5dp">
 
                             <EditText
-                                android:id="@+id/etApodos"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="@drawable/border_border_white_frame"
                                 android:padding="5dp"/>
-
-                            <ImageView
-                                android:id="@+id/ivEliminarApodo"
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:layout_marginStart="8dp"
-                                android:src="@android:drawable/ic_delete"
-                                app:tint="#FFFFFF"/>
 
                         </LinearLayout>
 
@@ -336,9 +328,10 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="#FFFFFF"
-                        android:text="Alergias"/>
+                        android:text="Alergias (Opcional)"/>
 
                     <LinearLayout
+                        android:id="@+id/llContenedorAlergias"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -352,20 +345,11 @@
                             android:layout_marginBottom="5dp">
 
                             <EditText
-                                android:id="@+id/etAlergias"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="@drawable/border_border_white_frame"
                                 android:padding="5dp"/>
-
-                            <ImageView
-                                android:id="@+id/ivEliminarAlergia"
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:layout_marginStart="8dp"
-                                android:src="@android:drawable/ic_delete"
-                                app:tint="#FFFFFF"/>
 
                         </LinearLayout>
 

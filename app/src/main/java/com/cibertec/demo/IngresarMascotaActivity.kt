@@ -19,19 +19,15 @@ class IngresarMascotaActivity : AppCompatActivity() {
             insets
         }
 
-        val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-        val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
-        val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
-        val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
-
         val especies = arrayOf("Perro", "Gato")
         val adapterEspecie = android.widget.ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, especies)
         val actvEspecie = findViewById<android.widget.AutoCompleteTextView>(R.id.actvEspecie)
-        val etNacimientoMascota = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etNacimientoMascota)
-        val btnIngresar = findViewById<android.widget.Button>(R.id.btnIngresar)
+        val llContenedorApodos = findViewById<android.widget.LinearLayout>(R.id.llContenedorApodos)
+        val llContenedorAlergias = findViewById<android.widget.LinearLayout>(R.id.llContenedorAlergias)
 
         actvEspecie.setAdapter(adapterEspecie)
 
+        val etNacimientoMascota = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etNacimientoMascota)
         etNacimientoMascota.setOnClickListener {
             val calendario = java.util.Calendar.getInstance()
             val anio = calendario.get(java.util.Calendar.YEAR)
@@ -46,24 +42,57 @@ class IngresarMascotaActivity : AppCompatActivity() {
             dpd.show()
         }
 
+        val btnIngresar = findViewById<android.widget.Button>(R.id.btnIngresar)
         btnIngresar.setOnClickListener {
+            val nombre = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etNombreMascota).text.toString()
+            val especie = actvEspecie.text.toString()
+            val fechaNacimiento = etNacimientoMascota.text.toString()
+            val rgGenero = findViewById<android.widget.RadioGroup>(R.id.rgGeneroMascota)
+            val rgEsterilizado = findViewById<android.widget.RadioGroup>(R.id.rgEsterilizado)
+
+            if (nombre.isEmpty() || especie.isEmpty() || fechaNacimiento.isEmpty()) {
+                android.widget.Toast.makeText(this, "Por favor, completa los campos obligatorios", android.widget.Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (rgGenero.checkedRadioButtonId == -1) {
+                android.widget.Toast.makeText(this, "Por favor, selecciona el género", android.widget.Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (rgEsterilizado.checkedRadioButtonId == -1) {
+                android.widget.Toast.makeText(this, "Por favor, indica si está esterilizado", android.widget.Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val userSesion = com.cibertec.demo.data.UsuarioRepository.usuarioSesion
 
             if (userSesion != null) {
-                val nombre = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etNombreMascota).text.toString()
-                val especie = actvEspecie.text.toString()
-                val rgGenero = findViewById<android.widget.RadioGroup>(R.id.rgGeneroMascota)
-                val genero = if (rgGenero.checkedRadioButtonId == R.id.mrbGeneroHembra) "Hembra" else "Macho"
+                val listaApodos = mutableListOf<String>()
+                for (i in 0 until llContenedorApodos.childCount) {
+                    val fila = llContenedorApodos.getChildAt(i) as android.widget.LinearLayout
+                    val edit = fila.getChildAt(0) as android.widget.EditText
+                    if (edit.text.isNotEmpty()) listaApodos.add(edit.text.toString())
+                }
 
-                val rgEst = findViewById<android.widget.RadioGroup>(R.id.rgEsterilizado)
-                val esterilizado = (rgEst.checkedRadioButtonId == R.id.mrbSiEsterilizado)
+                val listaAlergias = mutableListOf<String>()
+                for (i in 0 until llContenedorAlergias.childCount) {
+                    val fila = llContenedorAlergias.getChildAt(i) as android.widget.LinearLayout
+                    val edit = fila.getChildAt(0) as android.widget.EditText
+                    if (edit.text.isNotEmpty()) listaAlergias.add(edit.text.toString())
+                }
+
+                val genero = if (rgGenero.checkedRadioButtonId == R.id.mrbGeneroHembra) "Hembra" else "Macho"
+                val esterilizado = (rgEsterilizado.checkedRadioButtonId == R.id.mrbSiEsterilizado)
 
                 val nuevaMascota = com.cibertec.demo.entity.Mascota(
                     nombre = nombre,
                     especie = especie,
                     genero = genero,
-                    fechaNacimiento = etNacimientoMascota.text.toString(),
+                    fechaNacimiento = fechaNacimiento,
                     esEsterilizado = esterilizado,
+                    apodos = listaApodos,
+                    alergias = listaAlergias,
                     nickDueño = userSesion.nickUsuario
                 )
 
@@ -72,33 +101,81 @@ class IngresarMascotaActivity : AppCompatActivity() {
                 android.widget.Toast.makeText(this, "Mascota ${nuevaMascota.nombre} registrada con éxito", android.widget.Toast.LENGTH_SHORT).show()
                 irAMenuPrincipal()
             } else {
-                android.widget.Toast.makeText(this, "Error: No hay sesión activa", android.widget.Toast.LENGTH_SHORT).show()
+                android.widget.Toast.makeText(this, "No hay sesión activa", android.widget.Toast.LENGTH_SHORT).show()
             }
+        }
+
+        val btnAgregarApodo = findViewById<android.widget.Button>(R.id.btnAgregarApodo)
+        btnAgregarApodo.setOnClickListener {
+            agregarNuevaFila(llContenedorApodos, "Apodo")
+        }
+
+        val btnAgregarAlergia = findViewById<android.widget.Button>(R.id.btnAgregarAlergia)
+        btnAgregarAlergia.setOnClickListener {
+            agregarNuevaFila(llContenedorAlergias, "Alergia")
         }
 
         // VOLVER
 
+        val ivVolver = findViewById<ImageView>(R.id.ivVolver)
         ivVolver.setOnClickListener {
             irAMenuPrincipal()
         }
 
         // OPCION CONFIGURACION
 
+        val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
         ivConfiguracion.setOnClickListener {
             irAConfiguracion()
         }
 
         // OPCION PERFIL MASCOTA
 
+        val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
         ivPerfilMascota.setOnClickListener {
             irAPerfilMascota()
         }
 
         // OPCION PERFIL PERSONAL
 
+        val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
         ivPerfilPersonal.setOnClickListener {
             irAPerfilPersonal()
         }
+    }
+
+    private fun agregarNuevaFila(contenedor: android.widget.LinearLayout, pista: String) {
+        val nuevaFila = android.widget.LinearLayout(this).apply {
+            layoutParams = android.widget.LinearLayout.LayoutParams(
+                android.widget.LinearLayout.LayoutParams.MATCH_PARENT,
+                android.widget.LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+            orientation = android.widget.LinearLayout.HORIZONTAL
+            gravity = android.view.Gravity.CENTER_VERTICAL
+            setPadding(0, 0, 0, 8)
+        }
+
+        val nuevoEditText = android.widget.EditText(this).apply {
+            layoutParams = android.widget.LinearLayout.LayoutParams(0, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            hint = "Nuevo $pista"
+            setBackgroundResource(R.drawable.border_border_white_frame)
+            setPadding(15, 15, 15, 15)
+        }
+
+        val iconoEliminar = android.widget.ImageView(this).apply {
+            layoutParams = android.widget.LinearLayout.LayoutParams(90, 90).apply {
+                setMargins(15, 0, 0, 0)
+            }
+            setImageResource(android.R.drawable.ic_delete)
+            setColorFilter(android.graphics.Color.WHITE)
+            setOnClickListener {
+                contenedor.removeView(nuevaFila)
+            }
+        }
+
+        nuevaFila.addView(nuevoEditText)
+        nuevaFila.addView(iconoEliminar)
+        contenedor.addView(nuevaFila)
     }
 
     private fun irAMenuPrincipal() {
