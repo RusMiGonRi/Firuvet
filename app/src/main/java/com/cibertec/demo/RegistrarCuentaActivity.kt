@@ -1,6 +1,6 @@
 package com.cibertec.demo
 
-import android.app.DatePickerDialog // Importante para el calendario
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Paint
@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.cibertec.demo.entity.Usuario
-import java.util.Calendar // Importante para obtener la fecha actual
+import java.util.Calendar
 
 class RegistrarCuentaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

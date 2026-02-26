@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_perfil_mascota.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_perfil_mascota.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_option_button_configuracion.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/option_button_configuracion.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_background_firuvet_huellas.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/background_firuvet_huellas.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_background_firuvet_mapa_placeholder.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/background_firuvet_mapa_placeholder.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_option_button_usuario.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/option_button_usuario.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_button_button_crearcita.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/button_button_crearcita.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_inicio_sesion.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_inicio_sesion.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_border_orangegray_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_border_orangegray_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_option_button_volver.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/option_button_volver.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_lista_lugares.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_lista_lugares.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_menuprincipal.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_menuprincipal.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_drawer_header.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/drawer_header.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_perfilmascota.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_perfilmascota.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_button_button_placeholder.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/button_button_placeholder.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/xml_backup_rules.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_background_firuvet_background.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/background_firuvet_background.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_crearcita.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_crearcita.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-hdpi_ic_launcher_background.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-hdpi/ic_launcher_background.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xhdpi_ic_launcher_background.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xhdpi/ic_launcher_background.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_configuracion.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_configuracion.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_orangegray_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_orangegray_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_registrar_cuenta.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_registrar_cuenta.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_option_button_mascota.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/option_button_mascota.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_iniciarsesion.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_iniciarsesion.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_button_button_beneficios.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/button_button_beneficios.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_button_button_listalugares.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/button_button_listalugares.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_citas_pendiente.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_citas_pendiente.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxxhdpi_ic_launcher_background.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxxhdpi/ic_launcher_background.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_greengray_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_greengray_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_border_greengray_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_border_greengray_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_beneficios.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_beneficios.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_crear_cita.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_crear_cita.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_gray_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_gray_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxhdpi_ic_launcher_background.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxhdpi/ic_launcher_background.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_border_border_white_frame.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/border_border_white_frame.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_banner_firuvet_perfilpersonal.jpg.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/banner_firuvet_perfilpersonal.jpg"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-mdpi_ic_launcher_background.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-mdpi/ic_launcher_background.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_firuvet.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/firuvet.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/menu_drawer_menu.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/menu/drawer_menu.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_terminos_condiciones.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_terminos_condiciones.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/drawable_simbol_button_agregar.png.flat",
+        "source": "com.cibertec.demo.app-main-37:/drawable/simbol_button_agregar.png"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_perfil_personal.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_perfil_personal.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/layout_activity_beneficios.xml.flat",
+        "source": "com.cibertec.demo.app-main-37:/layout/activity_beneficios.xml"
+    },
+    {
+        "merged": "com.cibertec.demo.app-debug-35:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.cibertec.demo.app-main-37:/mipmap-mdpi/ic_launcher_foreground.webp"
+    }
+]

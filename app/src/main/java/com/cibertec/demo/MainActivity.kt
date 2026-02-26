@@ -7,6 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +23,24 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAInicioSesion() }
-        findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
-        findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
-        findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
 
+        findViewById<ImageView>(R.id.ivMenu).setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.itConfiguracion -> irAConfiguracion()
+                R.id.itPerfilMascota -> irAPerfilMascota()
+                R.id.itPerfilPersonal -> irAPerfilPersonal()
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
+        }
+
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAInicioSesion() }
         findViewById<ImageView>(R.id.ivCrearCita).setOnClickListener { irACrearCita() }
         findViewById<ImageView>(R.id.ivListaLugares).setOnClickListener { irAListaLugares() }
         findViewById<ImageView>(R.id.ivBeneficios).setOnClickListener { irABeneficios() }
