@@ -27,10 +27,15 @@ class PerfilPersonalActivity : AppCompatActivity() {
         val etDni = findViewById<android.widget.EditText>(R.id.etDni)
         val etTelefono = findViewById<android.widget.EditText>(R.id.etTelefono)
         val etDireccion = findViewById<android.widget.EditText>(R.id.etDireccion)
+
         val mrbIndefinido = findViewById<com.google.android.material.radiobutton.MaterialRadioButton>(R.id.mrbGeneroIndefinido)
-        val btnGuardarUsuario = findViewById<android.widget.Button>(R.id.btnGuardarUsuario)
         val rgGenero = findViewById<android.widget.RadioGroup>(R.id.rgGenero)
+
+        val btnGuardarUsuario = findViewById<android.widget.Button>(R.id.btnGuardarUsuario)
+
         val user = com.cibertec.demo.data.UsuarioRepository.usuarioSesion
+        val etCantidadMascotas = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etCantidadMascotas)
+        val etCantidadCitas = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etCantidadCitas)
 
         if (user != null) {
             etNombre.setText(user.nombreCompleto)
@@ -40,6 +45,16 @@ class PerfilPersonalActivity : AppCompatActivity() {
             etDni.setText(user.dni)
             etTelefono.setText(user.telefono)
             etDireccion.setText(user.direccion)
+
+            val misMascotas = com.cibertec.demo.data.MascotaRepository.listaMascotas.filter {
+                it.nickDueño == user.nickUsuario
+            }
+
+            etCantidadMascotas.setText(misMascotas.size.toString())
+            etCantidadMascotas.isEnabled = false
+
+            etCantidadCitas.setText("0")
+            etCantidadCitas.isEnabled = false
 
             if (user.genero == "Femenino") {
                 findViewById<com.google.android.material.radiobutton.MaterialRadioButton>(R.id.mrbGeneroFemenino).isChecked = true
