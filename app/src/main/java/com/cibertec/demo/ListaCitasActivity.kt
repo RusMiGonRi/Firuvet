@@ -21,6 +21,7 @@ class ListaCitasActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        configurarListaCitas()
 
         val rvCitas = findViewById<RecyclerView>(R.id.rvCitas)
         val todasLasCitas = com.cibertec.demo.data.CitaRepository.listaCitas
@@ -40,10 +41,18 @@ class ListaCitasActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val rvCitas = findViewById<RecyclerView>(R.id.rvCitas)
-        val todasLasCitas = com.cibertec.demo.data.CitaRepository.listaCitas
+        configurarListaCitas()
+    }
 
-        rvCitas.adapter = com.cibertec.demo.adapter.CitaAdapter(todasLasCitas) { citaSeleccionada ->
+    private fun configurarListaCitas() {
+        val rvCitas = findViewById<RecyclerView>(R.id.rvCitas)
+        val idUsuarioLogueado = com.cibertec.demo.data.UsuarioRepository.usuarioSesion?.id ?: 0
+        val citasDelUsuario = com.cibertec.demo.data.CitaRepository.listaCitas.filter {
+            it.idUsuario == idUsuarioLogueado
+        }
+
+        rvCitas.layoutManager = LinearLayoutManager(this)
+        rvCitas.adapter = com.cibertec.demo.adapter.CitaAdapter(citasDelUsuario) { citaSeleccionada ->
             val intent = Intent(this, CitasPendienteActivity::class.java)
             intent.putExtra("MASCOTA", citaSeleccionada.mascota)
             intent.putExtra("LUGAR", citaSeleccionada.lugar)

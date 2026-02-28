@@ -3,6 +3,7 @@ package com.cibertec.demo.entity
 import java.io.Serializable
 
 data class Usuario(
+    val id : Int,
     val nombreCompleto : String,
     var fechaNacimiento : String,
     val nickUsuario : String,

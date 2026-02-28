@@ -79,9 +79,16 @@ class CrearCitaActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            val idUsuarioActual = com.cibertec.demo.data.UsuarioRepository.usuarioSesion?.id ?: 0
+
             val nuevaCita = com.cibertec.demo.entity.Cita(
-                mascota, lugar, motivo, fecha, hora,
-                comentario.takeIf { it.isNotEmpty() }
+                idUsuario = idUsuarioActual,   // 1. El Int que faltaba
+                mascota = mascota,             // 2. String
+                lugar = lugar,                 // 3. String
+                motivo = motivo,               // 4. String
+                fecha = fecha,                 // 5. String
+                hora = hora,                   // 6. String
+                comentario = comentario.takeIf { it.isNotEmpty() } // 7. String?
             )
 
             com.cibertec.demo.data.CitaRepository.listaCitas.add(nuevaCita)

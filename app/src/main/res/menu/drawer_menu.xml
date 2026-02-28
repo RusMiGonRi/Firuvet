@@ -13,9 +13,9 @@
             android:title="Configuracion"/>
 
         <item
-            android:id="@+id/itPerfilMascota"
+            android:id="@+id/itListaMascotas"
             android:icon="@drawable/option_button_mascota"
-            android:title="Perfil de Mascotas"/>
+            android:title="Lista de Mascotas"/>
 
         <item
             android:id="@+id/itPerfilPersonal"

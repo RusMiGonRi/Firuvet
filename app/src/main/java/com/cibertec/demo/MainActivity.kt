@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.itConfiguracion -> irAConfiguracion()
-                R.id.itPerfilMascota -> irAPerfilMascota()
+                R.id.itListaMascotas -> irAListaMascotas()
                 R.id.itPerfilPersonal -> irAPerfilPersonal()
             }
             drawerLayout.closeDrawer(GravityCompat.END)
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.ivCrearCita).setOnClickListener { irACrearCita() }
         findViewById<ImageView>(R.id.ivListaLugares).setOnClickListener { irAListaLugares() }
         findViewById<ImageView>(R.id.ivBeneficios).setOnClickListener { irABeneficios() }
-        findViewById<ImageView>(R.id.ivCitasPendiente).setOnClickListener { irACitasPendiente() }
+        findViewById<ImageView>(R.id.ivListaCitas).setOnClickListener { irAListaCitas() }
     }
 
     private fun irAInicioSesion() {
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ConfiguracionActivity::class.java))
     }
 
-    private fun irAPerfilMascota() {
+    private fun irAListaMascotas() {
         startActivity(Intent(this, ListaMascotasActivity::class.java))
     }
 
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, BeneficiosActivity::class.java))
     }
 
-    private fun irACitasPendiente() {
-        startActivity(Intent(this, CitasPendienteActivity::class.java))
+    private fun irAListaCitas() {
+        startActivity(Intent(this, ListaCitasActivity::class.java))
     }
 }

@@ -93,22 +93,34 @@ class RegistrarCuentaActivity : AppCompatActivity() {
             val terminos = chbTerminos.isChecked
 
             if (nombre.isEmpty() || fecha.isEmpty() || nick.isEmpty() || clave.isEmpty()) {
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Completa todos los Campos", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            if (clave.length < 6) {
+                Toast.makeText(this, "La Contraseña debe tener al menos 6 Caracteres", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             if (clave != confirmarClave) {
-                Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Las Contraseñas no Coinciden", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             if (!terminos) {
-                Toast.makeText(this, "Debes aceptar los términos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Debes aceptar los Términos y Condiciones", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            val nuevoUsuario = Usuario(nombre, fecha, nick, clave, terminos)
+            val nuevoId = com.cibertec.demo.data.UsuarioRepository.listaUsuarios.size + 1
+            val nuevoUsuario = Usuario(
+                id = nuevoId,
+                nombreCompleto = nombre,
+                fechaNacimiento = fecha,
+                nickUsuario = nick,
+                claveUsuario = clave,
+                aceptoTerminos = terminos
+            )
             com.cibertec.demo.data.UsuarioRepository.listaUsuarios.add(nuevoUsuario)
 
-            Toast.makeText(this, "Usuario ${nuevoUsuario.nickUsuario} registrado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Usuario ${nuevoUsuario.nickUsuario} Registrado", Toast.LENGTH_LONG).show()
             irAIniciarSesion()
         }
 

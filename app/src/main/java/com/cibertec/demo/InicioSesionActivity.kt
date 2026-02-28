@@ -37,9 +37,7 @@ class InicioSesionActivity : AppCompatActivity() {
             val clave = etClave.text.toString().trim()
 
             if (usuario.isEmpty() || clave.isEmpty()) {
-                Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-            } else if (clave.length < 6) {
-                Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Completa todos los Campos", Toast.LENGTH_SHORT).show()
             } else {
                 val encontrado = com.cibertec.demo.data.UsuarioRepository.listaUsuarios.find {
                     it.nickUsuario == usuario && it.claveUsuario == clave
@@ -47,10 +45,11 @@ class InicioSesionActivity : AppCompatActivity() {
 
                 if (encontrado != null) {
                     com.cibertec.demo.data.UsuarioRepository.usuarioSesion = encontrado
-                    Toast.makeText(this, "Bienvenido " + encontrado.nombreCompleto, Toast.LENGTH_SHORT).show()
+
+                    Toast.makeText(this, "Bienvenido ${encontrado.nombreCompleto}", Toast.LENGTH_SHORT).show()
                     irAMenuPrincipal()
                 } else {
-                    Toast.makeText(this, "Usuario o clave incorrectos", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Usuario o Clave Incorrectos", Toast.LENGTH_SHORT).show()
                 }
             }
         }

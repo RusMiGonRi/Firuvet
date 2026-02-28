@@ -49,11 +49,14 @@ class PerfilPersonalActivity : AppCompatActivity() {
             val misMascotas = com.cibertec.demo.data.MascotaRepository.listaMascotas.filter {
                 it.nickDueño == user.nickUsuario
             }
-
             etCantidadMascotas.setText(misMascotas.size.toString())
             etCantidadMascotas.isEnabled = false
 
-            etCantidadCitas.setText("0")
+            val misCitas = com.cibertec.demo.data.CitaRepository.listaCitas.filter {
+                it.idUsuario == user.id
+            }
+
+            etCantidadCitas.setText(misCitas.size.toString())
             etCantidadCitas.isEnabled = false
 
             if (user.genero == "Femenino") {
