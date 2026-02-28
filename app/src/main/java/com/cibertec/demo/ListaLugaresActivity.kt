@@ -19,44 +19,43 @@ class ListaLugaresActivity : AppCompatActivity() {
             insets
         }
 
-        // VOLVER
+        val rvLugares = findViewById<androidx.recyclerview.widget.RecyclerView>(R.id.rvLugares)
+        val etBuscar = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.etBuscarLugar)
+        val adapter = com.cibertec.demo.adapter.LugarAdapter(com.cibertec.demo.data.LugarRepository.listaLugares)
+
+        rvLugares.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
+        rvLugares.adapter = adapter
+
+        etBuscar.addTextChangedListener(object : android.text.TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val texto = s.toString().lowercase()
+                val listaFiltrada = com.cibertec.demo.data.LugarRepository.listaLugares.filter {
+                    it.nombre.lowercase().contains(texto) || it.direccion.lowercase().contains(texto)
+                }
+                adapter.updateLista(listaFiltrada)
+            }
+            override fun afterTextChanged(s: android.text.Editable?) {}
+        })
 
         val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-
         ivVolver.setOnClickListener {
             irAMenuPrincipal()
         }
 
-        // OPCION CONFIGURACION
-
         val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
-
         ivConfiguracion.setOnClickListener {
             irAConfiguracion()
         }
 
-        // OPCION PERFIL MASCOTA
-
         val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
-
         ivPerfilMascota.setOnClickListener {
             irAPerfilMascota()
         }
 
-        // OPCION PERFIL PERSONAL
-
         val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
-
         ivPerfilPersonal.setOnClickListener {
             irAPerfilPersonal()
-        }
-
-        // SIMBOLO CREAR CITA
-
-        val ivCrearCita = findViewById<ImageView>(R.id.ivCrearCita)
-
-        ivCrearCita.setOnClickListener {
-            irACrearCita()
         }
     }
 
@@ -80,12 +79,6 @@ class ListaLugaresActivity : AppCompatActivity() {
 
     private fun irAPerfilPersonal() {
         val intent = Intent(this, PerfilPersonalActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun irACrearCita() {
-        val intent = Intent(this, CrearCitaActivity::class.java)
         startActivity(intent)
         finish()
     }
