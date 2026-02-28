@@ -121,13 +121,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 10.0.2.4&#10;- Cambio de funciones en BeneficiosActivity&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ConfiguracionActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en IngresarMascotaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en ListaLugaresActivity&#10;- Cambio de funciones en ListaMascotasActivity&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en PerfilMascotaActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;&#10;- Cambio del codigo en Beneficios&#10;- Cambio del codigo en CitasPendiente&#10;- Cambio del codigo en Configuracion&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en InicioSesion&#10;- Cambio del codigo en ListaCitas&#10;- Cambio del codigo en ListaLugares&#10;- Cambio del codigo en ListaMascotas&#10;- Cambio del codigo en Main">
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 10.0.2.9&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal&#10;- Cambio del codigo en RegistrarCuenta&#10;- Cambio del codigo en TerminosCondiciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/TerminosCondicionesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/TerminosCondicionesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_mascota.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_mascota.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil_personal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_cuenta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_cuenta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_terminos_condiciones.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_terminos_condiciones.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ConfiguracionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ConfiguracionActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -504,11 +501,18 @@
       <option name="project" value="LOCAL" />
       <updated>1772319070964</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="VERSION | 10.0.2.9&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal&#10;- Cambio del codigo en RegistrarCuenta&#10;- Cambio del codigo en TerminosCondiciones">
+      <option name="closed" value="true" />
+      <created>1772322246828</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1772322246828</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="VERSION | 2.0.0.1&#10;- Eliminado comentario de prueba en la activity Beneficios" />
     <MESSAGE value="VERSION | 4.0.1.7&#10;- Agregado la vista Citas Pendiente&#10;- Agregado la vista Configuracion&#10;- Agregado la vista Terminos Condiciones&#10;- Agregado ID's en Inicio Sesion&#10;- Agregado ID's en Crear Cita&#10;- Agregado los Drawer Layout&#10;- Cambio en la vista Main&#10;- Cambio de funciones en Crear Cita Activity&#10;- Cambio de funciones en Inicio Sesion Activity&#10;- Cambio de funciones en Main Activity&#10;- Cambio de funciones en Registrar Cuenta Activity" />
     <MESSAGE value="VERSION | 4.0.1.8&#10;- Cambio de funciones en Terminos Condiciones Activity&#10;- Cambio en el codigo de Terminos Condiciones" />
     <MESSAGE value="VERSION | 4.0.1.8&#10;- Agregado del drawer Menu&#10;- Agregado del drawer Header&#10;- Agregado del paquete Data&#10;- Agregado del paquete Ui&#10;- Agregado del paquete Entity&#10;- Agregado del data class Usuario&#10;- Agregado del objeto UsuarioRepository&#10;- Cambio de funciones en MainActivity&#10;- Cambio en el codigo de Main" />
@@ -533,7 +537,8 @@
     <MESSAGE value="VERSION | 9.0.6.3&#10;- Agregado la vista ListaCitas&#10;- Agregado la actividad ListaCitasActivity&#10;- Cambio de funciones en CitaAdapter&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ListaLugaresActivity" />
     <MESSAGE value="VERSION | 9.0.7.3&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Cita&#10;- Cambio de funciones en Usuario&#10;- Cambio del codigo en Main&#10;- Cambio del codigo en DrawerMenu" />
     <MESSAGE value="VERSION | 10.0.2.4&#10;- Cambio de funciones en BeneficiosActivity&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ConfiguracionActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en IngresarMascotaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en ListaLugaresActivity&#10;- Cambio de funciones en ListaMascotasActivity&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en PerfilMascotaActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;&#10;- Cambio del codigo en Beneficios&#10;- Cambio del codigo en CitasPendiente&#10;- Cambio del codigo en Configuracion&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en InicioSesion&#10;- Cambio del codigo en ListaCitas&#10;- Cambio del codigo en ListaLugares&#10;- Cambio del codigo en ListaMascotas&#10;- Cambio del codigo en Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 10.0.2.4&#10;- Cambio de funciones en BeneficiosActivity&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ConfiguracionActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en IngresarMascotaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en ListaLugaresActivity&#10;- Cambio de funciones en ListaMascotasActivity&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en PerfilMascotaActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;&#10;- Cambio del codigo en Beneficios&#10;- Cambio del codigo en CitasPendiente&#10;- Cambio del codigo en Configuracion&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio del codigo en InicioSesion&#10;- Cambio del codigo en ListaCitas&#10;- Cambio del codigo en ListaLugares&#10;- Cambio del codigo en ListaMascotas&#10;- Cambio del codigo en Main" />
+    <MESSAGE value="VERSION | 10.0.2.9&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal&#10;- Cambio del codigo en RegistrarCuenta&#10;- Cambio del codigo en TerminosCondiciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 10.0.2.9&#10;- Cambio de funciones en TerminosCondicionesActivity&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal&#10;- Cambio del codigo en RegistrarCuenta&#10;- Cambio del codigo en TerminosCondiciones" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
