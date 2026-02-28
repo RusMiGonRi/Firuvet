@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class PerfilMascotaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +20,25 @@ class PerfilMascotaActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
+
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+
+        findViewById<ImageView>(R.id.ivMenu).setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.itConfiguracion -> startActivity(Intent(this, ConfiguracionActivity::class.java))
+                R.id.itListaMascotas -> startActivity(Intent(this, ListaMascotasActivity::class.java))
+                R.id.itPerfilPersonal -> startActivity(Intent(this, PerfilPersonalActivity::class.java))
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
         }
 
         val nombreMascota = intent.getStringExtra("NOMBRE_MASCOTA")
@@ -75,51 +97,5 @@ class PerfilMascotaActivity : AppCompatActivity() {
                 }
             }
         }
-
-        val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-        ivVolver.setOnClickListener {
-            irAMenuPrincipal()
-        }
-
-        val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
-
-        ivConfiguracion.setOnClickListener {
-            irAConfiguracion()
-        }
-
-        val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
-        ivPerfilMascota.setOnClickListener {
-            irAPerfilMascota()
-        }
-
-
-        val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
-        ivPerfilPersonal.setOnClickListener {
-            irAPerfilPersonal()
-        }
-    }
-
-    private fun irAMenuPrincipal() {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun irAConfiguracion() {
-        val intent = Intent(this, ConfiguracionActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun irAPerfilMascota() {
-        val intent = Intent(this, ListaMascotasActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun irAPerfilPersonal() {
-        val intent = Intent(this, PerfilPersonalActivity::class.java)
-        startActivity(intent)
-        finish()
     }
 }

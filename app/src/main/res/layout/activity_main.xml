@@ -91,8 +91,7 @@
                         android:id="@+id/ivMenu"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:src="@drawable/option_button_configuracion"/>
+                        android:src="@drawable/option_button_menu"/>
 
                 </LinearLayout>
 
@@ -168,7 +167,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:gravity="center"
-                            android:weightSum="2">
+                            android:weightSum="3">
 
                             <ImageView
                                 android:id="@+id/ivCrearCita"
@@ -187,6 +186,15 @@
                                 android:layout_margin="5dp"
                                 android:scaleType="fitCenter"
                                 android:src="@drawable/button_button_listalugares"/>
+
+                            <ImageView
+                                android:id="@+id/ivIngresarMascota"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/button_button_ingresarmascota"/>
 
                         </LinearLayout>
 
@@ -214,7 +222,7 @@
                                 android:layout_weight="1"
                                 android:layout_margin="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/button_button_citaspendiente"/>
+                                android:src="@drawable/button_button_listacitas"/>
 
                         </LinearLayout>
 
@@ -233,7 +241,7 @@
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="end"
-        android:background="#6C9D88"
+        android:background="@drawable/border_border_white_frame"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer_menu"/>
 

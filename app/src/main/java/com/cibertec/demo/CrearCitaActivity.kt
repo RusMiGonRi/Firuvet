@@ -11,8 +11,11 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Calendar
 import java.util.Locale
@@ -22,11 +25,29 @@ class CrearCitaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_crear_cita)
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
+
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+
+        findViewById<ImageView>(R.id.ivMenu).setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.itConfiguracion -> startActivity(Intent(this, ConfiguracionActivity::class.java))
+                R.id.itListaMascotas -> startActivity(Intent(this, ListaMascotasActivity::class.java))
+                R.id.itPerfilPersonal -> startActivity(Intent(this, PerfilPersonalActivity::class.java))
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
         }
 
         val actvMascota = findViewById<AutoCompleteTextView>(R.id.actvMascota)
@@ -82,37 +103,23 @@ class CrearCitaActivity : AppCompatActivity() {
             val idUsuarioActual = com.cibertec.demo.data.UsuarioRepository.usuarioSesion?.id ?: 0
 
             val nuevaCita = com.cibertec.demo.entity.Cita(
-                idUsuario = idUsuarioActual,   // 1. El Int que faltaba
-                mascota = mascota,             // 2. String
-                lugar = lugar,                 // 3. String
-                motivo = motivo,               // 4. String
-                fecha = fecha,                 // 5. String
-                hora = hora,                   // 6. String
-                comentario = comentario.takeIf { it.isNotEmpty() } // 7. String?
+                idUsuario = idUsuarioActual,
+                mascota = mascota,
+                lugar = lugar,
+                motivo = motivo,
+                fecha = fecha,
+                hora = hora,
+                comentario = comentario.takeIf { it.isNotEmpty() }
             )
 
             com.cibertec.demo.data.CitaRepository.listaCitas.add(nuevaCita)
             Toast.makeText(this, "Cita para $mascota en $lugar creada con Éxito", Toast.LENGTH_LONG).show()
             irAMenuPrincipal()
         }
-
-        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
-        findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
-        findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
-        findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
     }
 
     private fun irAMenuPrincipal() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
-    }
-    private fun irAConfiguracion() {
-        startActivity(Intent(this, ConfiguracionActivity::class.java))
-    }
-    private fun irAPerfilMascota() {
-        startActivity(Intent(this, PerfilMascotaActivity::class.java))
-    }
-    private fun irAPerfilPersonal() {
-        startActivity(Intent(this, PerfilPersonalActivity::class.java))
     }
 }

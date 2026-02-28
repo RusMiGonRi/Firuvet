@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class ListaLugaresActivity : AppCompatActivity(), com.google.android.gms.maps.OnMapReadyCallback {
 
@@ -17,11 +20,29 @@ class ListaLugaresActivity : AppCompatActivity(), com.google.android.gms.maps.On
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_lista_lugares)
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
+
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+
+        findViewById<ImageView>(R.id.ivMenu).setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.itConfiguracion -> startActivity(Intent(this, ConfiguracionActivity::class.java))
+                R.id.itListaMascotas -> startActivity(Intent(this, ListaMascotasActivity::class.java))
+                R.id.itPerfilPersonal -> startActivity(Intent(this, PerfilPersonalActivity::class.java))
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
         }
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as com.google.android.gms.maps.SupportMapFragment
@@ -46,11 +67,6 @@ class ListaLugaresActivity : AppCompatActivity(), com.google.android.gms.maps.On
         if (!lugarSugerido.isNullOrEmpty()) {
             etBuscar.setText(lugarSugerido)
         }
-
-        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAMenuPrincipal() }
-        findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
-        findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
-        findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
     }
 
     private fun filtrarLugares(texto: String) {
@@ -82,25 +98,5 @@ class ListaLugaresActivity : AppCompatActivity(), com.google.android.gms.maps.On
             val primeraUbi = com.google.android.gms.maps.model.LatLng(lugares[0].latitud, lugares[0].longitud)
             mMap.moveCamera(com.google.android.gms.maps.CameraUpdateFactory.newLatLngZoom(primeraUbi, 12f))
         }
-    }
-
-    private fun irAMenuPrincipal() {
-        startActivity(Intent(this, MainActivity::class.java))
-        finish()
-    }
-
-    private fun irAConfiguracion() {
-        startActivity(Intent(this, ConfiguracionActivity::class.java))
-        finish()
-    }
-
-    private fun irAPerfilMascota() {
-        startActivity(Intent(this, PerfilMascotaActivity::class.java))
-        finish()
-    }
-
-    private fun irAPerfilPersonal() {
-        startActivity(Intent(this, PerfilPersonalActivity::class.java))
-        finish()
     }
 }

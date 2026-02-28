@@ -8,8 +8,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class CitasPendienteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +24,25 @@ class CitasPendienteActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
+
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+
+        findViewById<ImageView>(R.id.ivMenu).setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.itConfiguracion -> startActivity(Intent(this, ConfiguracionActivity::class.java))
+                R.id.itListaMascotas -> startActivity(Intent(this, ListaMascotasActivity::class.java))
+                R.id.itPerfilPersonal -> startActivity(Intent(this, PerfilPersonalActivity::class.java))
+            }
+            drawerLayout.closeDrawer(GravityCompat.END)
+            true
         }
 
         val tvNombre = findViewById<TextView>(R.id.tvNombreMascotaCita)
@@ -57,7 +79,7 @@ class CitasPendienteActivity : AppCompatActivity() {
                 if (citaEncontrada != null) {
                     com.cibertec.demo.data.CitaRepository.listaCitas.remove(citaEncontrada)
                     Toast.makeText(this, "Cita Cancelada", Toast.LENGTH_SHORT).show()
-                    finish() // Volver a la lista
+                    finish()
                 }
             }
 
@@ -77,20 +99,5 @@ class CitasPendienteActivity : AppCompatActivity() {
                 Toast.makeText(this, "No hay un lugar Especificado", Toast.LENGTH_SHORT).show()
             }
         }
-
-        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
-        findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
-        findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
-        findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
-    }
-
-    private fun irAConfiguracion() {
-        startActivity(Intent(this, ConfiguracionActivity::class.java))
-    }
-    private fun irAPerfilMascota() {
-        startActivity(Intent(this, PerfilMascotaActivity::class.java))
-    }
-    private fun irAPerfilPersonal() {
-        startActivity(Intent(this, PerfilPersonalActivity::class.java))
     }
 }

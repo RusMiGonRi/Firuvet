@@ -19,14 +19,10 @@ class TerminosCondicionesActivity : AppCompatActivity() {
             insets
         }
 
-        // VOLVER
-
         val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-
         ivVolver.setOnClickListener {
             irARegistrarCuenta()
         }
-
     }
 
     private fun irARegistrarCuenta() {

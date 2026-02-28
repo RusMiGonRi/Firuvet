@@ -121,18 +121,32 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 9.0.6.3&#10;- Agregado la vista ListaCitas&#10;- Agregado la actividad ListaCitasActivity&#10;- Cambio de funciones en CitaAdapter&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ListaLugaresActivity">
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 9.0.7.3&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Cita&#10;- Cambio de funciones en Usuario&#10;- Cambio del codigo en Main&#10;- Cambio del codigo en DrawerMenu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/BeneficiosActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/BeneficiosActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CitasPendienteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CitasPendienteActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ConfiguracionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ConfiguracionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CrearCitaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CrearCitaActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/IngresarMascotaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/IngresarMascotaActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/InicioSesionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/InicioSesionActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaCitasActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaCitasActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaLugaresActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaLugaresActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaMascotasActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaMascotasActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilMascotaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilMascotaActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilPersonalActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/RegistrarCuentaActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Cita.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Cita.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/entity/Usuario.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/TerminosCondicionesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/TerminosCondicionesActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_beneficios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_beneficios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_pendiente.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_pendiente.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_cita.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_cita.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresar_mascota.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ingresar_mascota.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_inicio_sesion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_inicio_sesion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_citas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_citas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_lugares.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_lugares.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_mascotas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_mascotas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772310145376</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="VERSION | 9.0.7.3&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Cita&#10;- Cambio de funciones en Usuario&#10;- Cambio del codigo en Main&#10;- Cambio del codigo en DrawerMenu">
+      <option name="closed" value="true" />
+      <created>1772312089600</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1772312089600</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -521,7 +543,8 @@
     <MESSAGE value="VERSION | 9.0.2.2&#10;- Agregado la entidad Cita&#10;- Agregado el repositorio CitaRepository&#10;- Cambio de funciones en LugarRepository&#10;- Cambio de funciones en ListaLugaresActivity" />
     <MESSAGE value="VERSION | 9.0.4.0&#10;- Agregado el adaptador CitaAdapter&#10;- Agregado el item ItemCita" />
     <MESSAGE value="VERSION | 9.0.6.3&#10;- Agregado la vista ListaCitas&#10;- Agregado la actividad ListaCitasActivity&#10;- Cambio de funciones en CitaAdapter&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ListaLugaresActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 9.0.6.3&#10;- Agregado la vista ListaCitas&#10;- Agregado la actividad ListaCitasActivity&#10;- Cambio de funciones en CitaAdapter&#10;- Cambio de funciones en CitasPendienteActivity&#10;- Cambio de funciones en ListaLugaresActivity" />
+    <MESSAGE value="VERSION | 9.0.7.3&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Cita&#10;- Cambio de funciones en Usuario&#10;- Cambio del codigo en Main&#10;- Cambio del codigo en DrawerMenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 9.0.7.3&#10;- Cambio de funciones en MainActivity&#10;- Cambio de funciones en CrearCitaActivity&#10;- Cambio de funciones en InicioSesionActivity&#10;- Cambio de funciones en ListaCitasActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio de funciones en RegistrarCuentaActivity&#10;- Cambio de funciones en Cita&#10;- Cambio de funciones en Usuario&#10;- Cambio del codigo en Main&#10;- Cambio del codigo en DrawerMenu" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

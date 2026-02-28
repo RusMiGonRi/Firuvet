@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.itConfiguracion -> irAConfiguracion()
-                R.id.itListaMascotas -> irAListaMascotas()
-                R.id.itPerfilPersonal -> irAPerfilPersonal()
+                R.id.itConfiguracion -> startActivity(Intent(this, ConfiguracionActivity::class.java))
+                R.id.itListaMascotas -> startActivity(Intent(this, ListaMascotasActivity::class.java))
+                R.id.itPerfilPersonal -> startActivity(Intent(this, PerfilPersonalActivity::class.java))
             }
             drawerLayout.closeDrawer(GravityCompat.END)
             true
@@ -51,18 +51,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, InicioSesionActivity::class.java)
         startActivity(intent)
         finish()
-    }
-
-    private fun irAConfiguracion() {
-        startActivity(Intent(this, ConfiguracionActivity::class.java))
-    }
-
-    private fun irAListaMascotas() {
-        startActivity(Intent(this, ListaMascotasActivity::class.java))
-    }
-
-    private fun irAPerfilPersonal() {
-        startActivity(Intent(this, PerfilPersonalActivity::class.java))
     }
 
     private fun irACrearCita() {
