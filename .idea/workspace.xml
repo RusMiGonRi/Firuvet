@@ -101,17 +101,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 7.0.4.8&#10;- Cambio de funciones en PerfilPersonalActivity">
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Firuvet.app.iml" beforeDir="false" />
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 8.0.4.1&#10;- Agregado la actividad ListaMascotasActivity&#10;- Agregado la vista ListaMascotas&#10;- Agregado el adaptador MascotaAdapter&#10;- Agregado el item ItemMascota&#10;- Cambio de funciones en PerfilMascotaActivity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilMascotaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/PerfilMascotaActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772150598971</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="VERSION | 8.0.4.1&#10;- Agregado la actividad ListaMascotasActivity&#10;- Agregado la vista ListaMascotas&#10;- Agregado el adaptador MascotaAdapter&#10;- Agregado el item ItemMascota&#10;- Cambio de funciones en PerfilMascotaActivity">
+      <option name="closed" value="true" />
+      <created>1772293271082</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1772293271082</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -437,7 +438,8 @@
     <MESSAGE value="VERSION | 7.0.4.5&#10;- Agregado el repositorio MascotaRepository&#10;- Cambio de funciones en IngresarMascotaActivity&#10;- Cambio de funciones en PerfilPersonalActivity&#10;- Cambio del codigo en CrearCita&#10;- Cambio del codigo en PerfilMascota&#10;- Cambio del codigo en PerfilPersonal" />
     <MESSAGE value="VERSION | 7.0.4.7&#10;- Cambio del codigo en IngresarMascota&#10;- Cambio de funciones en IngresarMascotaActivity" />
     <MESSAGE value="VERSION | 7.0.4.8&#10;- Cambio de funciones en PerfilPersonalActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 7.0.4.8&#10;- Cambio de funciones en PerfilPersonalActivity" />
+    <MESSAGE value="VERSION | 8.0.4.1&#10;- Agregado la actividad ListaMascotasActivity&#10;- Agregado la vista ListaMascotas&#10;- Agregado el adaptador MascotaAdapter&#10;- Agregado el item ItemMascota&#10;- Cambio de funciones en PerfilMascotaActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 8.0.4.1&#10;- Agregado la actividad ListaMascotasActivity&#10;- Agregado la vista ListaMascotas&#10;- Agregado el adaptador MascotaAdapter&#10;- Agregado el item ItemMascota&#10;- Cambio de funciones en PerfilMascotaActivity" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

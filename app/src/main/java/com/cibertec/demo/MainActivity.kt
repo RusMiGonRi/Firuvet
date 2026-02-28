@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun irAPerfilMascota() {
-        startActivity(Intent(this, PerfilMascotaActivity::class.java))
+        startActivity(Intent(this, ListaMascotasActivity::class.java))
     }
 
     private fun irAPerfilPersonal() {

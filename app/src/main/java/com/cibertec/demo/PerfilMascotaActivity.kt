@@ -29,6 +29,8 @@ class PerfilMascotaActivity : AppCompatActivity() {
                 findViewById<android.widget.EditText>(R.id.etNombreMascota).setText(mascota.nombre)
                 findViewById<android.widget.AutoCompleteTextView>(R.id.actvEspecie).setText(mascota.especie)
                 findViewById<android.widget.EditText>(R.id.etNacimientoMascota).setText(mascota.fechaNacimiento)
+                findViewById<android.widget.EditText>(R.id.etApodos).setText(mascota.apodos.joinToString(", "))
+                findViewById<android.widget.EditText>(R.id.etAlergias).setText(mascota.alergias.joinToString(", "))
 
                 if (mascota.genero == "Hembra") {
                     findViewById<android.widget.RadioButton>(R.id.mrbGeneroHembra).isChecked = true
@@ -40,6 +42,36 @@ class PerfilMascotaActivity : AppCompatActivity() {
                     findViewById<android.widget.RadioButton>(R.id.mrbSiEsterilizado).isChecked = true
                 } else {
                     findViewById<android.widget.RadioButton>(R.id.mrbNoEsterilizado).isChecked = true
+                }
+            }
+        }
+
+        val btnGuardarMascota = findViewById<android.widget.Button>(R.id.btnGuardarMascota)
+        btnGuardarMascota.setOnClickListener {
+            if (nombreMascota != null) {
+                val mascotaAEditar = com.cibertec.demo.data.MascotaRepository.listaMascotas.find {
+                    it.nombre == nombreMascota
+                }
+
+                if (mascotaAEditar != null) {
+                    mascotaAEditar.nombre = findViewById<android.widget.EditText>(R.id.etNombreMascota).text.toString()
+                    mascotaAEditar.especie = findViewById<android.widget.AutoCompleteTextView>(R.id.actvEspecie).text.toString()
+                    mascotaAEditar.genero = if (findViewById<android.widget.RadioButton>(R.id.mrbGeneroHembra).isChecked) "Hembra" else "Macho"
+                    mascotaAEditar.esEsterilizado = findViewById<android.widget.RadioButton>(R.id.mrbSiEsterilizado).isChecked
+
+                    val nuevosApodos = findViewById<android.widget.EditText>(R.id.etApodos).text.toString().split(",").map { it.trim() }
+                    val nuevasAlergias = findViewById<android.widget.EditText>(R.id.etAlergias).text.toString().split(",").map { it.trim() }
+
+                    mascotaAEditar.apodos.clear()
+                    mascotaAEditar.apodos.addAll(nuevosApodos)
+                    mascotaAEditar.alergias.clear()
+                    mascotaAEditar.alergias.addAll(nuevasAlergias)
+
+                    android.widget.Toast.makeText(this, "Datos de ${mascotaAEditar.nombre} Actualizados", android.widget.Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, ListaMascotasActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
             }
         }
@@ -80,7 +112,7 @@ class PerfilMascotaActivity : AppCompatActivity() {
     }
 
     private fun irAPerfilMascota() {
-        val intent = Intent(this, PerfilMascotaActivity::class.java)
+        val intent = Intent(this, ListaMascotasActivity::class.java)
         startActivity(intent)
         finish()
     }
