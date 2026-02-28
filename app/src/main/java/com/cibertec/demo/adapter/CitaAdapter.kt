@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.cibertec.demo.R
 import com.cibertec.demo.entity.Cita
 
-class CitaAdapter(private val listaCitas: List<Cita>) :
-    RecyclerView.Adapter<CitaAdapter.CitaViewHolder>() {
+class CitaAdapter(
+    private val listaCitas: List<Cita>,
+    private val onItemClick: (Cita) -> Unit
+) : RecyclerView.Adapter<CitaAdapter.CitaViewHolder>() {
 
     class CitaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvMascota: TextView = view.findViewById(R.id.tvMascotaCita)
@@ -26,6 +28,9 @@ class CitaAdapter(private val listaCitas: List<Cita>) :
         val cita = listaCitas[position]
         holder.tvMascota.text = cita.mascota
         holder.tvFechaHora.text = "${cita.fecha} - ${cita.hora}"
+        holder.itemView.setOnClickListener {
+            onItemClick(cita)
+        }
     }
 
     override fun getItemCount() = listaCitas.size

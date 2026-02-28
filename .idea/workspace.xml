@@ -50,6 +50,11 @@
           <theme>@style/Theme.Firuvet</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_citas.xml">
+        <config>
+          <theme>@style/Theme.Firuvet</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_lugares.xml">
         <config>
           <theme>@style/Theme.Firuvet</theme>
@@ -116,8 +121,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 9.0.2.2&#10;- Agregado la entidad Cita&#10;- Agregado el repositorio CitaRepository&#10;- Cambio de funciones en LugarRepository&#10;- Cambio de funciones en ListaLugaresActivity">
+    <list default="true" id="3bedc767-79d6-48c9-8c34-f70c642470de" name="Changes" comment="VERSION | 9.0.4.0&#10;- Agregado el adaptador CitaAdapter&#10;- Agregado el item ItemCita">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CitasPendienteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/CitasPendienteActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaLugaresActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/ListaLugaresActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/adapter/CitaAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cibertec/demo/adapter/CitaAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -462,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772301095855</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="VERSION | 9.0.4.0&#10;- Agregado el adaptador CitaAdapter&#10;- Agregado el item ItemCita">
+      <option name="closed" value="true" />
+      <created>1772302454456</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1772302454456</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -488,7 +505,8 @@
     <MESSAGE value="VERSION | 8.0.8.2&#10;- Agregado el item ItemLugar&#10;- Agregado la entidad Lugar&#10;- Agregado el adaptador LugarAdapter&#10;- Agregado el repositorio LugarRepository&#10;- Cambio del codigo en ListaLugares&#10;- Cambio de funciones en ListaLugaresActivity" />
     <MESSAGE value="VERSION | 8.0.8.4&#10;- Cambio del codigo en ListaLugares&#10;- Cambio de funciones en ListaLugaresActivity" />
     <MESSAGE value="VERSION | 9.0.2.2&#10;- Agregado la entidad Cita&#10;- Agregado el repositorio CitaRepository&#10;- Cambio de funciones en LugarRepository&#10;- Cambio de funciones en ListaLugaresActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 9.0.2.2&#10;- Agregado la entidad Cita&#10;- Agregado el repositorio CitaRepository&#10;- Cambio de funciones en LugarRepository&#10;- Cambio de funciones en ListaLugaresActivity" />
+    <MESSAGE value="VERSION | 9.0.4.0&#10;- Agregado el adaptador CitaAdapter&#10;- Agregado el item ItemCita" />
+    <option name="LAST_COMMIT_MESSAGE" value="VERSION | 9.0.4.0&#10;- Agregado el adaptador CitaAdapter&#10;- Agregado el item ItemCita" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
