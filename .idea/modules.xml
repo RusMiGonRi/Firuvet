@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Firuvet.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Firuvet.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Firuvet.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Firuvet.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Firuvet.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Firuvet.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Firuvet.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Firuvet.app.unitTest.iml" />
     </modules>
   </component>
 </project>

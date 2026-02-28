@@ -19,15 +19,35 @@ class PerfilMascotaActivity : AppCompatActivity() {
             insets
         }
 
-        // VOLVER
+        val nombreMascota = intent.getStringExtra("NOMBRE_MASCOTA")
+        if (nombreMascota != null) {
+            val mascota = com.cibertec.demo.data.MascotaRepository.listaMascotas.find {
+                it.nombre == nombreMascota
+            }
+
+            if (mascota != null) {
+                findViewById<android.widget.EditText>(R.id.etNombreMascota).setText(mascota.nombre)
+                findViewById<android.widget.AutoCompleteTextView>(R.id.actvEspecie).setText(mascota.especie)
+                findViewById<android.widget.EditText>(R.id.etNacimientoMascota).setText(mascota.fechaNacimiento)
+
+                if (mascota.genero == "Hembra") {
+                    findViewById<android.widget.RadioButton>(R.id.mrbGeneroHembra).isChecked = true
+                } else {
+                    findViewById<android.widget.RadioButton>(R.id.mrbGeneroMacho).isChecked = true
+                }
+
+                if (mascota.esEsterilizado) {
+                    findViewById<android.widget.RadioButton>(R.id.mrbSiEsterilizado).isChecked = true
+                } else {
+                    findViewById<android.widget.RadioButton>(R.id.mrbNoEsterilizado).isChecked = true
+                }
+            }
+        }
 
         val ivVolver = findViewById<ImageView>(R.id.ivVolver)
-
         ivVolver.setOnClickListener {
             irAMenuPrincipal()
         }
-
-        // OPCION CONFIGURACION
 
         val ivConfiguracion = findViewById<ImageView>(R.id.ivConfiguracion)
 
@@ -35,22 +55,16 @@ class PerfilMascotaActivity : AppCompatActivity() {
             irAConfiguracion()
         }
 
-        // OPCION PERFIL MASCOTA
-
         val ivPerfilMascota = findViewById<ImageView>(R.id.ivPerfilMascota)
-
         ivPerfilMascota.setOnClickListener {
             irAPerfilMascota()
         }
 
-        // OPCION PERFIL PERSONAL
 
         val ivPerfilPersonal = findViewById<ImageView>(R.id.ivPerfilPersonal)
-
         ivPerfilPersonal.setOnClickListener {
             irAPerfilPersonal()
         }
-
     }
 
     private fun irAMenuPrincipal() {
