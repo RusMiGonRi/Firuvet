@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Calendar
+import java.util.Locale
 
 class CrearCitaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,17 +36,24 @@ class CrearCitaActivity : AppCompatActivity() {
         val etHoraCita = findViewById<TextInputEditText>(R.id.etHoraCita)
         val etComentarioExtra = findViewById<TextInputEditText>(R.id.etComentarioExtra)
         val btnCrearCita = findViewById<Button>(R.id.btnCrearCita)
+        val listaNombresMascotas = com.cibertec.demo.data.MascotaRepository.listaMascotas.map { it.nombre }
+        val nombresMascotasFinal = listaNombresMascotas.ifEmpty { listOf("No tienes Mascotas") }
 
-        val mascotas = arrayOf("Firulais", "Michi", "Lulu")
-        actvMascota.setAdapter(ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, mascotas))
+        actvMascota.setAdapter(ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, nombresMascotasFinal))
 
-        val lugares = arrayOf("Sede Norte", "Sede Sur", "Veterinaria Central")
-        actvLugar.setAdapter(ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, lugares))
+        val listaNombresLugares = com.cibertec.demo.data.LugarRepository.listaLugares.map { it.nombre }
+        val adapterLugares = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, listaNombresLugares)
+        actvLugar.setAdapter(adapterLugares)
+
+        val nombreRecibido = intent.getStringExtra("VETERINARIA_NOMBRE")
+        if (!nombreRecibido.isNullOrEmpty()) {
+            actvLugar.setText(nombreRecibido, false)
+        }
 
         etFechaCita.setOnClickListener {
             val c = Calendar.getInstance()
             DatePickerDialog(this, { _, year, month, day ->
-                val fecha = String.format("%02d/%02d/%d", day, month + 1, year)
+                val fecha = String.format(Locale.getDefault(), "%02d/%02d/%d", day, month + 1, year)
                 etFechaCita.setText(fecha)
             }, c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH)).show()
         }
@@ -53,7 +61,7 @@ class CrearCitaActivity : AppCompatActivity() {
         etHoraCita.setOnClickListener {
             val c = Calendar.getInstance()
             TimePickerDialog(this, { _, hour, minute ->
-                val hora = String.format("%02d:%02d", hour, minute)
+                val hora = String.format(Locale.getDefault(), "%02d:%02d", hour, minute)
                 etHoraCita.setText(hora)
             }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show()
         }
@@ -66,16 +74,22 @@ class CrearCitaActivity : AppCompatActivity() {
             val hora = etHoraCita.text.toString()
             val comentario = etComentarioExtra.text.toString().trim()
 
-            if (mascota.isEmpty() || motivo.isEmpty() || fecha.isEmpty() || hora.isEmpty()) {
-                Toast.makeText(this, "Por favor, completa los campos obligatorios", Toast.LENGTH_SHORT).show()
+            if (mascota.isEmpty() || mascota == "No tienes Mascotas" || motivo.isEmpty() || fecha.isEmpty() || hora.isEmpty()) {
+                Toast.makeText(this, "Completa los campos Obligatorios", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            Toast.makeText(this, "Cita para $mascota creada con éxito", Toast.LENGTH_LONG).show()
+            val nuevaCita = com.cibertec.demo.entity.Cita(
+                mascota, lugar, motivo, fecha, hora,
+                comentario.takeIf { it.isNotEmpty() }
+            )
+
+            com.cibertec.demo.data.CitaRepository.listaCitas.add(nuevaCita)
+            Toast.makeText(this, "Cita para $mascota en $lugar creada con Éxito", Toast.LENGTH_LONG).show()
             irAMenuPrincipal()
         }
 
-        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAMenuPrincipal() }
+        findViewById<ImageView>(R.id.ivVolver).setOnClickListener { finish() }
         findViewById<ImageView>(R.id.ivConfiguracion).setOnClickListener { irAConfiguracion() }
         findViewById<ImageView>(R.id.ivPerfilMascota).setOnClickListener { irAPerfilMascota() }
         findViewById<ImageView>(R.id.ivPerfilPersonal).setOnClickListener { irAPerfilPersonal() }
