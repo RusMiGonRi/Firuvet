@@ -8,189 +8,255 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.cibertec.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:7:22-78
 14
-15    <uses-permission android:name="com.cibertec.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:5:5-56:19
-18        android:allowBackup="true"
-18-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\ef77885a6172e5640cf5a54cb300f16b\workspace\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.Firuvet" >
-29-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:13:9-45
-30        <activity
-30-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:14:9-16:40
-31            android:name="com.cibertec.demo.IngresarMascotaActivity"
-31-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:15:13-52
-32            android:exported="false" />
-32-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:16:13-37
-33        <activity
-33-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:17:9-19:40
-34            android:name="com.cibertec.demo.CitasPendienteActivity"
-34-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:18:13-51
-35            android:exported="false" />
-35-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:19:13-37
-36        <activity
-36-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:20:9-22:40
-37            android:name="com.cibertec.demo.TerminosCondicionesActivity"
-37-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:21:13-56
-38            android:exported="false" />
-38-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:22:13-37
-39        <activity
-39-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:23:9-25:40
-40            android:name="com.cibertec.demo.RegistrarCuentaActivity"
-40-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:24:13-52
-41            android:exported="false" />
-41-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:25:13-37
-42        <activity
-42-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:26:9-28:40
-43            android:name="com.cibertec.demo.PerfilPersonalActivity"
-43-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:27:13-51
-44            android:exported="false" />
-44-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:28:13-37
-45        <activity
-45-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:29:9-31:40
-46            android:name="com.cibertec.demo.PerfilMascotaActivity"
-46-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:30:13-50
-47            android:exported="false" />
-47-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:31:13-37
-48        <activity
-48-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:32:9-34:40
-49            android:name="com.cibertec.demo.ListaLugaresActivity"
-49-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:33:13-49
-50            android:exported="false" />
-50-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:34:13-37
-51        <activity
-51-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:35:9-37:40
-52            android:name="com.cibertec.demo.MainActivity"
-52-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:36:13-41
-53            android:exported="false" />
-53-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:37:13-37
-54        <activity
-54-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:38:9-40:40
-55            android:name="com.cibertec.demo.CrearCitaActivity"
-55-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:39:13-46
-56            android:exported="false" />
-56-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:40:13-37
-57        <activity
-57-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:41:9-43:40
-58            android:name="com.cibertec.demo.ConfiguracionActivity"
-58-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:42:13-50
-59            android:exported="false" />
-59-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:43:13-37
-60        <activity
-60-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:44:9-46:40
-61            android:name="com.cibertec.demo.BeneficiosActivity"
-61-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:45:13-47
-62            android:exported="false" />
-62-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:46:13-37
-63        <activity
-63-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:47:9-55:20
-64            android:name="com.cibertec.demo.InicioSesionActivity"
-64-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:48:13-49
-65            android:exported="true" >
-65-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:49:13-36
-66            <intent-filter>
-66-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:50:13-54:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:51:17-69
-67-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:51:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:53:17-77
-69-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:53:27-74
-70            </intent-filter>
-71        </activity>
-72
-73        <provider
-73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-74            android:name="androidx.startup.InitializationProvider"
-74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-75            android:authorities="com.cibertec.demo.androidx-startup"
-75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-76            android:exported="false" >
-76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-77            <meta-data
-77-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-78-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-79                android:value="androidx.startup" />
-79-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f1eb7b75529e6226b44ae47c11dc751\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-80            <meta-data
-80-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f121473a0f6446934a112e96ed23570\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-81-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f121473a0f6446934a112e96ed23570\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-82                android:value="androidx.startup" />
-82-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\7f121473a0f6446934a112e96ed23570\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-83            <meta-data
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-85                android:value="androidx.startup" />
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-86        </provider>
-87
-88        <receiver
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-90            android:directBootAware="false"
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-91            android:enabled="true"
-91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-92            android:exported="true"
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-93            android:permission="android.permission.DUMP" >
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:20:5-78
+16-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:20:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:22:5-24:33
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:23:8-40
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:24:8-31
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:27:5-30:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:29:7-61
+25-->[com.google.android.gms:play-services-maps:20.0.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\283717f4f0fb3e95cf2845b6d45aa206\workspace\transformed\play-services-maps-20.0.0\AndroidManifest.xml:29:16-59
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.cibertec.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.cibertec.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:9:5-71:19
+35        android:allowBackup="true"
+35-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:10:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.17.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e339bfaf5b99a73d4ece5eb4fba170a0\workspace\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
+37        android:dataExtractionRules="@xml/data_extraction_rules"
+37-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:11:9-65
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:fullBackupContent="@xml/backup_rules"
+40-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:12:9-54
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:13:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:14:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:15:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:16:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.Firuvet" >
+46-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:17:9-45
+47        <activity
+47-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:18:9-20:40
+48            android:name="com.cibertec.demo.ListaCitasActivity"
+48-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:19:13-47
+49            android:exported="false" />
+49-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:20:13-37
+50
+51        <meta-data
+51-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:22:9-24:38
+52            android:name="com.google.android.geo.API_KEY"
+52-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:23:13-58
+53            android:value="APIKEY" />
+53-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:24:13-35
+54
+55        <activity
+55-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:26:9-28:40
+56            android:name="com.cibertec.demo.ListaMascotasActivity"
+56-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:27:13-50
+57            android:exported="false" />
+57-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:28:13-37
+58        <activity
+58-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:29:9-31:40
+59            android:name="com.cibertec.demo.IngresarMascotaActivity"
+59-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:30:13-52
+60            android:exported="false" />
+60-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:31:13-37
+61        <activity
+61-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:32:9-34:40
+62            android:name="com.cibertec.demo.CitasPendienteActivity"
+62-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:33:13-51
+63            android:exported="false" />
+63-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:34:13-37
+64        <activity
+64-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:35:9-37:40
+65            android:name="com.cibertec.demo.TerminosCondicionesActivity"
+65-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:36:13-56
+66            android:exported="false" />
+66-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:37:13-37
+67        <activity
+67-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:38:9-40:40
+68            android:name="com.cibertec.demo.RegistrarCuentaActivity"
+68-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:39:13-52
+69            android:exported="false" />
+69-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:40:13-37
+70        <activity
+70-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:41:9-43:40
+71            android:name="com.cibertec.demo.PerfilPersonalActivity"
+71-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:42:13-51
+72            android:exported="false" />
+72-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:43:13-37
+73        <activity
+73-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:44:9-46:40
+74            android:name="com.cibertec.demo.PerfilMascotaActivity"
+74-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:45:13-50
+75            android:exported="false" />
+75-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:46:13-37
+76        <activity
+76-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:47:9-49:40
+77            android:name="com.cibertec.demo.ListaLugaresActivity"
+77-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:48:13-49
+78            android:exported="false" />
+78-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:49:13-37
+79        <activity
+79-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:50:9-52:40
+80            android:name="com.cibertec.demo.MainActivity"
+80-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:51:13-41
+81            android:exported="false" />
+81-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:52:13-37
+82        <activity
+82-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:53:9-55:40
+83            android:name="com.cibertec.demo.CrearCitaActivity"
+83-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:54:13-46
+84            android:exported="false" />
+84-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:55:13-37
+85        <activity
+85-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:56:9-58:40
+86            android:name="com.cibertec.demo.ConfiguracionActivity"
+86-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:57:13-50
+87            android:exported="false" />
+87-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:58:13-37
+88        <activity
+88-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:59:9-61:40
+89            android:name="com.cibertec.demo.BeneficiosActivity"
+89-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:60:13-47
+90            android:exported="false" />
+90-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:61:13-37
+91        <activity
+91-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:62:9-70:20
+92            android:name="com.cibertec.demo.InicioSesionActivity"
+92-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:63:13-49
+93            android:exported="true" >
+93-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:64:13-36
 94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-96            </intent-filter>
-97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-99            </intent-filter>
-100            <intent-filter>
-100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-102            </intent-filter>
-103            <intent-filter>
-103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\e199448d3dbe9c3e9a663d624254d34c\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-105            </intent-filter>
-106        </receiver>
-107    </application>
+94-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:65:13-69:29
+95                <action android:name="android.intent.action.MAIN" />
+95-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:66:17-69
+95-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:66:25-66
+96
+97                <category android:name="android.intent.category.LAUNCHER" />
+97-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:68:17-77
+97-->C:\Users\rusbe\OneDrive\Documentos\Firuvet\app\src\main\AndroidManifest.xml:68:27-74
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\f5c7e17d28e227b1ce98f4c3d1c3546d\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\f5c7e17d28e227b1ce98f4c3d1c3546d\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\f5c7e17d28e227b1ce98f4c3d1c3546d\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\f5c7e17d28e227b1ce98f4c3d1c3546d\workspace\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+104
+105        <meta-data
+105-->[com.google.android.gms:play-services-basement:18.9.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\c6e7a3de74a555847193bf4e31cb419f\workspace\transformed\play-services-basement-18.9.0\AndroidManifest.xml:21:9-23:69
+106            android:name="com.google.android.gms.version"
+106-->[com.google.android.gms:play-services-basement:18.9.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\c6e7a3de74a555847193bf4e31cb419f\workspace\transformed\play-services-basement-18.9.0\AndroidManifest.xml:22:13-58
+107            android:value="@integer/google_play_services_version" />
+107-->[com.google.android.gms:play-services-basement:18.9.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\c6e7a3de74a555847193bf4e31cb419f\workspace\transformed\play-services-basement-18.9.0\AndroidManifest.xml:23:13-66
 108
-109</manifest>
+109        <provider
+109-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+111            android:authorities="com.cibertec.demo.androidx-startup"
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+114-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+115                android:value="androidx.startup" />
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\04f48d541a039c2591991061ef3282c0\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\4ef60c3c50d0707407b9fc9d8e4ab08f\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\4ef60c3c50d0707407b9fc9d8e4ab08f\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\4ef60c3c50d0707407b9fc9d8e4ab08f\workspace\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+121                android:value="androidx.startup" />
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+122        </provider>
+123
+124        <receiver
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+125            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+126            android:directBootAware="false"
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+127            android:enabled="true"
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+128            android:exported="true"
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+129            android:permission="android.permission.DUMP" >
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+131                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+134                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+137                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+140                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\rusbe\.gradle\caches\9.1.0\transforms\554d3b0de02c4bce386f91eb4a988007\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+141            </intent-filter>
+142        </receiver>
+143    </application>
+144
+145</manifest>

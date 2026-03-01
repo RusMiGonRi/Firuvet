@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.cibertec.demo.app-mergeDebugResources-33:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.cibertec.demo.app-mergeDebugResources-36:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rusbe\\.gradle\\caches\\9.1.0\\transforms\\2ae7703ab9db85c9ddb2b7c028270df3\\workspace\\transformed\\appcompat-1.7.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\rusbe\\.gradle\\caches\\9.1.0\\transforms\\b9aff78825217fc634a3338c22d0df01\\workspace\\transformed\\appcompat-1.7.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

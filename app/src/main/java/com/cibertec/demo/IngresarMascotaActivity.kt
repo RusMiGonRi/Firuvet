@@ -160,7 +160,7 @@ class IngresarMascotaActivity : AppCompatActivity() {
             layoutParams = android.widget.LinearLayout.LayoutParams(90, 90).apply {
                 setMargins(15, 0, 0, 0)
             }
-            setImageResource(android.R.drawable.icon_eliminar)
+            setImageResource(R.drawable.icon_eliminar)
             setColorFilter(android.graphics.Color.WHITE)
             setOnClickListener {
                 contenedor.removeView(nuevaFila)

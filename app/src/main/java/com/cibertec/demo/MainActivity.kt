@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.ivVolver).setOnClickListener { irAInicioSesion() }
         findViewById<ImageView>(R.id.ivCrearCita).setOnClickListener { irACrearCita() }
         findViewById<ImageView>(R.id.ivListaLugares).setOnClickListener { irAListaLugares() }
+        findViewById<ImageView>(R.id.ivIngresarMascota).setOnClickListener { irAIngresarMascota() }
         findViewById<ImageView>(R.id.ivBeneficios).setOnClickListener { irABeneficios() }
         findViewById<ImageView>(R.id.ivListaCitas).setOnClickListener { irAListaCitas() }
     }
@@ -59,6 +60,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun irAListaLugares() {
         startActivity(Intent(this, ListaLugaresActivity::class.java))
+    }
+
+    private fun irAIngresarMascota() {
+        startActivity(Intent(this, IngresarMascotaActivity::class.java))
     }
 
     private fun irABeneficios() {

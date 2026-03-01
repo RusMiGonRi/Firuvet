@@ -37,37 +37,12 @@
 
         </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:background="@drawable/border_greengray_frame"
-            android:padding="10dp">
-
-            <ImageView
-                android:id="@+id/ivVolver"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/option_button_volver"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:text="Volver"/>
-
-        </LinearLayout>
-
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_firuvet_huellas">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -98,151 +73,154 @@
             </FrameLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="680dp"
-                android:padding="10dp"
-                android:background="@drawable/background_firuvet_huellas">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_gray_frame">
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="15dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/border_gray_frame">
+                    android:text="1. Cuentas de Empresa Verificadas"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="1. Cuentas de Empresa Verificadas"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Las empresas deben pasar un proceso de validación de identidad y permisos legales para operar. Al registrarse, aceptan la auditoría de sus servicios por parte de Firuvet."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="10dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Las empresas deben pasar un proceso de validación de identidad y permisos legales para operar. Al registrarse, aceptan la auditoría de sus servicios por parte de Firuvet."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="10dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    app:dividerColor="#FFFFFF"
+                    app:dividerThickness="2dp"/>
 
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="12dp"
-                        app:dividerColor="#FFFFFF"
-                        app:dividerThickness="2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Transparencia y Monitoreo"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="2. Transparencia y Monitoreo"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El usuario tendrá acceso a actualizaciones en tiempo real sobre los procedimientos realizados. La empresa se compromete a mantener la información actualizada y veraz."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="10dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="El usuario tendrá acceso a actualizaciones en tiempo real sobre los procedimientos realizados. La empresa se compromete a mantener la información actualizada y veraz."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="10dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    app:dividerColor="#FFFFFF"
+                    app:dividerThickness="2dp"/>
 
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="12dp"
-                        app:dividerColor="#FFFFFF"
-                        app:dividerThickness="2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Protección de Datos de la Mascota"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="3. Protección de Datos de la Mascota"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El historial clínico es compartido exclusivamente entre la empresa prestadora y el dueño. Firuvet garantiza el cifrado de esta información sensible."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="15dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="El historial clínico es compartido exclusivamente entre la empresa prestadora y el dueño. Firuvet garantiza el cifrado de esta información sensible."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="15dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    app:dividerColor="#FFFFFF"
+                    app:dividerThickness="2dp"/>
 
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="12dp"
-                        app:dividerColor="#FFFFFF"
-                        app:dividerThickness="2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Responsabilidad Médica y Técnica"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="4. Responsabilidad Médica y Técnica"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firuvet es una plataforma de enlace. La calidad del servicio veterinario o estético es responsabilidad directa de la empresa verificada."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="15dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Firuvet es una plataforma de enlace. La calidad del servicio veterinario o estético es responsabilidad directa de la empresa verificada."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="15dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    app:dividerColor="#FFFFFF"
+                    app:dividerThickness="2dp"/>
 
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="12dp"
-                        app:dividerColor="#FFFFFF"
-                        app:dividerThickness="2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Uso de Fotos y Videos en Tiempo Real"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="5. Uso de Fotos y Videos en Tiempo Real"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Las empresas podrán subir evidencia visual del estado de la mascota. Estas imágenes son propiedad del usuario y no podrán ser usadas para publicidad sin permiso."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="15dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Las empresas podrán subir evidencia visual del estado de la mascota. Estas imágenes son propiedad del usuario y no podrán ser usadas para publicidad sin permiso."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="15dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    app:dividerColor="#FFFFFF"
+                    app:dividerThickness="2dp"/>
 
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginBottom="12dp"
-                        app:dividerColor="#FFFFFF"
-                        app:dividerThickness="2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Revocación de Verificación"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="6. Revocación de Verificación"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Firuvet se reserva el derecho de eliminar cuentas de empresas que reciban reportes de mala praxis o que incumplan con la veracidad del monitoreo en vivo."
-                        android:textColor="#FFFFFF"
-                        android:layout_marginBottom="15dp"/>
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Firuvet se reserva el derecho de eliminar cuentas de empresas que reciban reportes de mala praxis o que incumplan con la veracidad del monitoreo en vivo."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="15dp"/>
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Entendido"
+                android:backgroundTint="#333333"/>
 
         </LinearLayout>
 

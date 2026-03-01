@@ -312,9 +312,7 @@
                         android:backgroundTint="#333333"
                         android:text="Cerrar Sesión"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        app:icon="@drawable/icon_cerrarsesion"
-                        app:iconTint="#FFFFFF"/>
+                        android:textStyle="bold"/>
 
                 </LinearLayout>
 
